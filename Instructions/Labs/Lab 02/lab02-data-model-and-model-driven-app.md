@@ -106,11 +106,13 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
 4.  Click on the **Publisher** dropdown and select **+ Publisher**.
 
+[!div class="mx-imgBorder"]
 ![Create new publisher - screenshot](./media/image1.png)
 
 5.  Enter **Lamna Healthcare** for **Display name**, **lh** for **Prefix**, and click **Save and Close**.
 
-![Save publisher - screenshot](./media/image2.png)
+> [!div class="mx-imgBorder"]
+> ![Save publisher - screenshot](./media/image2.png)
 
 6.  Click **Done** on the popup.
 
@@ -118,7 +120,7 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
 8.  Click **Create**.
 
-![Create solution - screenshot](./media/image3.png)
+:::image type="content" source="media/image3.png" alt-text="Create solution - screenshot":::
 
 9.  You should now see the solution you crated in the solution list.
 
