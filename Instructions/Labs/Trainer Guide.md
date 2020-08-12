@@ -10,6 +10,17 @@ lab:
 
 ## Trainer Guide
 
+
+
+## TOADD <!-- into relevant section -->
+
+* Solution checker may fail. It's a known issue where solution contains components and the fix is being rolled out in August 2020
+* Canvas. In the locales where comma is used as a decimal separator, replace commas in formulas with semicolon and double the semicolons, e.g. 
+
+`Set('My Tabs', 'Foobar';)` becomes `Set('My Tabs'; 'Foobar');;`
+
+
+
 # Environments
 
 Students will need one Common Data Service (CDS) environment each to complete the course work. Environments can be provisioned by the students during class or they can be provisioned prior to the delivery with credentials handed over to the students prior to the first exercise.
