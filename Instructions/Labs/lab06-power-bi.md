@@ -5,12 +5,10 @@ lab:
 ---
 
 # PL-100: Microsoft Power Platform App Maker
-## Module X, Lab 6 – Power BI
-
 Scenario
 ========
 
-In this lab, you will build a Power BI dashboard that visualizes data about .
+In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.
 
 High-level lab steps
 ======================
@@ -26,7 +24,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ## Prerequisites
 
-* Completion of Lab 2 - Data Modeling
+Must have completed Lab 02 – Data model and model-driven app
 
 Things to consider before you begin
 -----------------------------------
@@ -36,115 +34,205 @@ Things to consider before you begin
 -   Do you have sufficient data to visualise?
 -   What are the possible characteristics you can use to analyse data about the visits?
 
-Exercise \#1: Create Power BI Report 
-===============================
+## Detailed steps
+
+### Exercise 1: Create Power BI Report 
 
 **Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
 
-Task \#1: Prepare Data
----------------------------
+#### Task 1: Configure Power BI Desktop
+
+1. If you do not have Power BI Desktop installed, open https://aka.ms/pbidesktopstore to download and install Power BI app.
+2. Open Power BI Desktop
+3. If you were signed in into Power BI Desktop previously, select **File | Sign out** 
+4. Sign in if prompted or select **File | Sign in** to sign in.  
+5. If you're signing in for the first time you may receive the following prompt
+
+![Prompt to sign up for Power BI account if opened for the first time](06/media/image-6-2.png)
+
+6. Select **Sign up for Power BI** and follow the prompts to complete the sign up 
+
+#### Task 2: Prepare Data
 
 1.  Find out your organization URL
 
     * Navigate to Power Platform Admin Center at https://aka.ms/ppac.
-    * In the left navigation page, select Environments, and then select the target environment.
+    * In the left navigation page, select Environments, and then click on the target environment.
     * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
-2. If you do not have Power BI Desktop installed, navigate to https://aka.ms/pbidesktopstore to download and install Power BI app.
 
-3. Open Power BI Desktop, sign in if prompted.
+![Copy CDS environment URL](06/media/image-6-1.png)
 
-4. Select **Get data**.
+2. Switch to Power BI desktop
 
-5. Select **Power Platform**, then select **Common Data Service**, and press **Connect**.
+3. Select **Get data | More...**
 
-6. Paste the environment URL you copied earlier, press **OK**.
+![Get data command in Power BI Desktop](06/media/image-6-3.png)
 
-7. ~~Expand **Entities** node, select **bc_Building** and **bc_Visit** entities, click **Load**.~~
+4. Select **Power Platform**, then select **Common Data Service**, and press **Connect**.
 
-8. ~~Click **Model** icon on the left vertical toolbar.~~
+![Connect to Power Platform > Common Data Service data source](06/media/image-6-4.png)
 
-9. ~~Drag **bc_buildingid** column from **bc_Building** table and drop it to **bc_building** column in **bc_Visit** table. That will create a relationship between two entities that Power BI will be able to use to display related data.~~
+5. Paste the environment URL you copied earlier, press **OK**.
 
-10. ~~Select **Report** icon on the left toolbar.~~
+![Connection details for CDS](06/media/image-6-5.png)
 
-11. ~~Expand **bc_Visits** node in the **Fields** panel.~~
+6. The connection details dialog will open up. If you are not signed in, press **Sign in** and follow the prompts to sign in. Press **Connect**. 
 
-12. ~~Click ... and select **New Column**.~~
+![Signing into CDS](06/media/image-6-6.png)
 
-13. ~~Complete the formula as following~~
+7. Expand **Entities** node, select **lh_Building**, **lh_Department**, **lh_ProblemReport** entities, press **Load**. Wait until the load is complete.
 
-    ```
-    Column = RELATED(bc_Building[bc_name])
-    ```
+![img](06/media/image-6-7.png)
 
-    ~~and press ENTER. That will add a new field with the building name into the visits data.~~
+8. Click **Model** icon on the left vertical toolbar.
 
-14. ~~Click ... next to the field and select **Rename**. Enter **Building** as the field name.~~
+![image-20200813002727982](06/media/image-6-8.png)
 
-15. ~~Click ... next to the **bc_visitid** field and select **Rename**. Enter **Visits** as the field name.~~
+9. Drag **lh_buildingid** column from **lh_Building** table and drop it to **lh_building** column in **lh_ProblemReport** table. That will create a relationship between two entities that Power BI will be able to use to display related data.
 
-16. ~~Click ... next to the **bc_scheduledstart** field and select **Rename**. Enter **Start** as the field name.~~
+![Connect two related entities](06/media/image-6-9.png)
 
-17. Save work in progress by pressing **File &#124; Save** and entering a filename of your choice.
+10. Repeat the previous step to drag **lh_departmentid** column and drop it into **lh_department** column in **lh_ProblemReport**. Your diagram should look like this:
 
-## Task #2: Create Chart and Time Visualizations
+![Final relationships diagram](06/media/image-6-10.png)
+
+11. Select **Report** icon on the left toolbar.
+
+![Report icon on the toolbar](06/media/image-6-11.png)
+
+12. Expand **lh_ProblemReports** node in the **Fields** panel.
+
+13. Click ... and select **New Column**.
+
+![Create new column command](06/media/image-6-12.png)
+
+14. Complete the formula as following
+
+```
+Building = RELATED(lh_Building[lh_name])
+```
+
+and press ENTER or click checkmark button. That will add a new column with the building name into the problem report data.
+
+![Adding new column using RELATED expression](06/media/image-6-13.png)
+
+15. Repeat two previous steps to add a column **Department** with the following formula 
+
+``` 
+Department = RELATED(lh_Department[lh_name])
+```
+
+16. Click ... next to the **lh_problemreportid** column and select **Rename**. Enter **Problem Report** as the column name.
+17. Click ... next to the **statuscode_display** column and select **Rename**. Enter **Status** as the column name.
+18. Save work in progress by pressing **File &#124; Save** and entering a filename of your choice.
+
+#### Task 2: Create Chart and Time Visualizations
 
 1. Press pie chart icon in the **Visualizations** panel to insert the chart.
+
+![Select pie chart visualization](06/media/image-6-14.png)
+
 2. Drag **Building** field and drop it into **Legend** target box.
-3. Drag **Visits** field and drop it into **Values** target box.
-4. Resize the pie chart using corner handles so that all chart components are visible.
+3. Drag **Problem Reports** field and drop it into **Values** target box.
+
+![Complete visualization properties by selecting columns as legend and values](06/media/image-6-15.png)
+
+4. Resize the pie chart using corner handles so that all chart components are visible. Your report should now look like this:
+
+![Completed pie chart visualization](06/media/image-6-16.png)
+
 5. Click **New visual** on the Power BI ribbon then select stacked column chart in **Visualizations** pane. 
-6. Drag **Visits** field and drop it into **Values** target box.
+
+![Stacked column chart](06/media/image-6-17.png)
+
+6. Drag **Problem Report** field and drop it into **Values** target box.
 7. Drag **Start** field and drop it into **Axis** target box.
 8. Click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals.
 9. Resize the chart as required using the corner handles.
 10. Test the report interactivity:
     * Select various building slices on the pie chart and observe changes on the time report.
     * Select various bars on the time column chart and observe changes on the pie report.
-    * Drilldown to the month level using icons or **Data/Drill &#124; Expand next level** ribbon command.
-11. Save work in progress by pressing **File &#124; Save**.
+    * Drilldown to the month level using icons or **Data/Drill | Expand next level** ribbon command or drilldown toolbar
 
-Exercise #2: Create Power BI Dashboard
-================================
+![Drill down time series stacked column report](06/media/image-6-18.png)
 
-## Task #1: Publish Power BI Report
+11. Save work in progress by pressing **File | Save**.
+
+#### Challenge
+
+* Replace grouping by building with grouping by **Status** column 
+
+### Exercise 2: Create Power BI Dashboard
+
+#### Task 1: Publish Power BI Report
 
 1. Press **Publish** button on the ribbon.
+
+![Publish command on the ribbon](06/media/image-6-19.png)
 
 2. Select **My workspace** as the destination, then press **Select**.
 
 3. Wait until publishing is complete and click **Open \<name of your report\>.pbix in Power BI**.
 
-## Task #2: Create Power BI Dashboard
+![Open published report](06/media/image-6-20.png)
+
+This will open the published report in the browser.
+
+#### Task 2: Create Power BI Dashboard
 
 1. Expand **My workspace**.
 2. Select the report under **Reports** heading.
+
+![Select published report](06/media/image-6-21.png)
+
 3. Select **Pin a live page** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
+
+![Pin a live page](06/media/image-6-22.png)
+
 4. Select **New dashboard** on **Pin to dashboard** prompt.
-5. ~~Enter **Campus Management** as a **Dashboard name**, press **Pin live**.~~
-6. ~~Select **My workspace** node, select **Campus Management** dashboard.~~
+5. Enter **Problem Management** as a **Dashboard name**, press **Pin live**.
+
+![Pin to dashboard](06/media/image-6-23.png)
+
+6. Select **My workspace** node, select **Problem Management** dashboard.
 7. Test interactivity of the pie and bar charts displayed.
 
-## Task #3: Add Visualizations Using Natural Language
+#### Task 3: Add Visualizations Using Natural Language
 
 1. Select **Ask a question about your data** on top of the dashboard
-2. ~~Enter **buildings by number of visits** in Q&A area. The bar chart will be displayed.~~
+
+![Natural language selection](06/media/image-6-24.png)
+
+2. Enter **funnel count of problem reports by status** in Q&A area. The funnel chart will be displayed.
 3. Select **Pin visual**.
-4. ~~Select **Existing dashboard**, select **Campus Management** dashboard, press **Pin**.~~
+
+![Pin visual funnel chart](06/media/image-6-25.png)
+
+4. Select **Existing dashboard**, select **Problem Management** dashboard, press **Pin**.
 5. Test the behaviour by clicking on the chart to drilldown to Q&A.
 
-## Task #4: Build Mobile Phone View
+#### Task 4: Build Mobile Phone View
 
-1. Select the report from **Reports** area.
+1. Select the **Problem Management** dashboard from **Dashboards** area.
 2. Depending on the UI version select either **... &#124; Mobile View** or  **Web View &#124; Phone View**.
 3. Rearrange tiles as desired.
-4. Select **... &#124; Generate QR Code**.
-5. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
-6. Navigate and explore reports on a mobile device.
 
-# Challenges
+![Editing phone view](06/media/image-6-26.png)
 
-* ~~Dashboards and reports to include campus and building plans~~
-* ~~Report and analyze visiting patterns and trends~~
-* ~~Overstaying visualization~~
-* ~~Streaming Power BI for near real-time processing for a large campus~~ 
+4. Select your report under **My Workspace | Reports**
+5. Select **... | Generate QR Code**.
+
+![Generating QR code](06/media/image-6-27.png)
+
+6. If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
+
+> [!NOTE]
+> To access the dashboard and report you will have to sign in on the phone as the same user.
+
+7. Navigate and explore reports and dashboards on a mobile device. 
+
+## Challenges
+
+* Dashboards and reports to include drilldown to individual reports with photos
+* Report and analyze problem patterns and trends
+* Problem resolution status visualization as a funnel
