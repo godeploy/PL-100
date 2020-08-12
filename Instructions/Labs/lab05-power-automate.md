@@ -28,7 +28,7 @@ The following have been identified as requirements you must implement to complet
 
 ## **Prerequisites**
 
-  - Completion of Lab 01 - Data model and model-driven app
+Must have completed Lab 02 – Data model and model-driven app
 
 ## Things to consider before you begin
 

@@ -20,6 +20,10 @@
 
   - Exercise 2 – Business rule to not allow close without resolution
 
+## **Prerequisites**
+
+Must have completed Lab 02 – Data model and model-driven app
+
 ## **Detailed steps**
 
 ### **Exercise 1: Create business process flow**

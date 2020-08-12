@@ -22,7 +22,7 @@
 
 ## **Prerequisites**
 
-  - Completion of Lab 01 - Data model and model-driven app
+Must have completed Lab 02 – Data model and model-driven app
 
 ## Detailed steps
 
