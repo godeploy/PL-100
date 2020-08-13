@@ -24,7 +24,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ## Prerequisites
 
-Must have completed Lab 02 – Data model and model-driven app
+* Must have completed Lab 02 – Data model and model-driven app
+* Permissions to install programs on your computer (required for Power BI Desktop installation)
 
 Things to consider before you begin
 -----------------------------------
@@ -36,9 +37,12 @@ Things to consider before you begin
 
 ## Detailed steps
 
-### Exercise 1: Create Power BI Report 
+### Exercise 1: Prepare environment & data  
 
-**Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
+**Objective:** In this exercise, you will install and configure Power BI Desktop and configure a connection to Common Data Service. 
+
+> [!IMPORTANT]
+> If you do not have required permissions to install desktop applications or experience difficulties in configuring Power BI Desktop and connecting it to the data, follow **Exercise 4: Import sample data** and then continue on **Exercise 2** but using Power BI service instead of Power BI Desktop.
 
 #### Task 1: Configure Power BI Desktop
 
@@ -126,7 +130,11 @@ Department = RELATED(lh_Department[lh_name])
 17. Click ... next to the **statuscode_display** column and select **Rename**. Enter **Status** as the column name.
 18. Save work in progress by pressing **File &#124; Save** and entering a filename of your choice.
 
-#### Task 2: Create Chart and Time Visualizations
+### Exercise 2: Create Power BI Report 
+
+**Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
+
+#### Task 1: Create Chart and Time Visualizations
 
 1. Press pie chart icon in the **Visualizations** panel to insert the chart.
 
@@ -146,10 +154,17 @@ Department = RELATED(lh_Department[lh_name])
 ![Stacked column chart](06/media/image-6-17.png)
 
 6. Drag **Problem Report** field and drop it into **Values** target box.
-7. Drag **Start** field and drop it into **Axis** target box.
+7. Drag **createdon** field and drop it into **Axis** target box.
 8. Click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals.
+
+> [!TIP]
+> Initial stacked column chart will only display the year level. To access monthly data breakdown you need to expand report into the monthly level. The easiest way to drill down is right-button click on the report and select **Expand next level**.
+
+![image-20200813224441334](06/media/image-6-28.png)
+
 9. Resize the chart as required using the corner handles.
 10. Test the report interactivity:
+
     * Select various building slices on the pie chart and observe changes on the time report.
     * Select various bars on the time column chart and observe changes on the pie report.
     * Drilldown to the month level using icons or **Data/Drill | Expand next level** ribbon command or drilldown toolbar
@@ -162,7 +177,7 @@ Department = RELATED(lh_Department[lh_name])
 
 * Replace grouping by building with grouping by **Status** column 
 
-### Exercise 2: Create Power BI Dashboard
+### Exercise 3: Create Power BI Dashboard
 
 #### Task 1: Publish Power BI Report
 
@@ -236,3 +251,21 @@ This will open the published report in the browser.
 * Dashboards and reports to include drilldown to individual reports with photos
 * Report and analyze problem patterns and trends
 * Problem resolution status visualization as a funnel
+
+## Exercise 4: Import sample data
+
+1. Download [problem-reports-data.pbix](06\Resources\problem-reports-data.pbix) and save on your computer
+2. Navigate to https://app.powerbi.com/
+3. Click **My Workspace**
+4. Expand **+New** and select **Upload a file**
+
+![image-20200813231726672](06/media/image-6-29.png)
+
+5. Select **Local File**
+6. Locate and select **problem-report-data.pbix** file you've downloaded earlier.
+7. Once data load is complete, select **problem-reports-data** report.
+8. Click **...** then select **Edit**
+
+![image-20200813232037732](06/media/image-6-30.png)
+
+9. Continue on **Exercise 2**
