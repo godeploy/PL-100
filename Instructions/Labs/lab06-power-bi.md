@@ -5,13 +5,11 @@ lab:
 ---
 
 # PL-100: Microsoft Power Platform App Maker
-Scenario
-========
+# Scenario
 
 In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.
 
-High-level lab steps
-======================
+# High-level lab steps
 
 We will follow the below steps to design and create the Power BI dashboard:
 
@@ -27,8 +25,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 * Must have completed Lab 02 – Data model and model-driven app
 * Permissions to install programs on your computer (required for Power BI Desktop installation)
 
-Things to consider before you begin
------------------------------------
+## Things to consider before you begin
 
 -   Who is the target audience of the report?
 -   How will the audience consume the report? Typical device? Location?
