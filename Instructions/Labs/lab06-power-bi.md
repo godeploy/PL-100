@@ -1,10 +1,4 @@
----
-lab:
-    title: 'Lab 06: Power BI'
-    module: 'Module X: Y'
----
-
-# PL-100: Microsoft Power Platform App Maker
+# LAB 06: Power BI
 # Scenario
 
 In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.

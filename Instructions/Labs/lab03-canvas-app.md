@@ -1,6 +1,6 @@
-# **Lab 03: Canvas app**
+# Lab 03: Canvas app
 
-## **What you will learn**
+## What you will learn
 
   - Import and use a pre-built component library
 
@@ -14,7 +14,7 @@
 
   - Use images with data records
 
-## **High-level lab steps**
+## High-level lab steps
 
   - Exercise 1 – Import company components
 
@@ -22,13 +22,13 @@
 
   - Exercise 3 – Submit New Report
 
-## **Prerequisites**
+## Prerequisites
 
 Must have completed Lab 02 – Data model and model-driven app
 
-## **Detailed steps**
+## Detailed steps
 
-### **Exercise 1: Create canvas application**
+### Exercise 1: Create canvas application
 
 In this exercise, you will import a solution with shared components, create a view for the problem report entity, and create a canvas application.
 

@@ -1,6 +1,6 @@
-# **Lab 04: Business Process Flows and Business Rules**
+# Lab 04: Business Process Flows and Business Rules
 
-## **What you will learn**
+## What you will learn
 
   - How to identify stages in a Business Process Flow (BPF)
 
@@ -8,7 +8,7 @@
 
   - How to use a business rule to implement logic
 
-## **High-level lab steps**
+## High-level lab steps
 
   - Exercise 1 – Create BPF lifecycle of problem report
     
@@ -20,13 +20,13 @@
 
   - Exercise 2 – Business rule to not allow close without resolution
 
-## **Prerequisites**
+## Prerequisites
 
 Must have completed Lab 02 – Data model and model-driven app
 
-## **Detailed steps**
+## Detailed steps
 
-### **Exercise 1: Create business process flow**
+### Exercise 1: Create business process flow
 
 In this exercise, you will create a business process flow for the problem report entity.
 
@@ -126,7 +126,7 @@ In this task, you will create a business process flow for the problem report ent
 
 28. Add the new data step below the **Resolution** data step.
 
-29. Select the new data step, go to the Properties pane, select Resolved on for Date Field, and click Apply.
+29. Select the new data step, go to the **Properties** pane, select **Resolved on** for **Date Field**, and click **Apply**.
 
 30. The Business process flow should now look like the image below. Click **Save**.
 

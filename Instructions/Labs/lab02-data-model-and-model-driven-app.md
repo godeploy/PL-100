@@ -1,8 +1,8 @@
-# **Lab 02 – Data model and model-driven app**
+# Lab 02 – Data model and model-driven app
 
 In this lab you will be implementing the data model for the solution and building a model-driven app that will be used by anyone fixing problems or managing the overall effort.
 
-## **What you will learn**
+## What you will learn
 
   - Create entities, fields, and relationships
 
@@ -14,7 +14,7 @@ In this lab you will be implementing the data model for the solution and buildi
 
   - Create and configure entity views
 
-## **High-level lab steps**
+## High-level lab steps
 
   - Exercise 1 – Create publisher and solution  
 
@@ -34,13 +34,13 @@ In this lab you will be implementing the data model for the solution and buildi
 
   - Exercise 5 – Input data and refine some views, import some problem reports 
 
-## **Detailed steps**
+## Detailed steps
 
-### **Exercise 1: Create publisher and solution**
+### Exercise 1: Create publisher and solution
 
 In this exercise, you will create a custom solution publisher and a solution. This custom solution will be used in all the labs for this course to keep all the assets together.
 
-#### **Task 1: Create publisher and solution**
+#### Task 1: Create publisher and solution
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment assigned to you.
 

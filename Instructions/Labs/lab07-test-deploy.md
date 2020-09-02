@@ -1,10 +1,10 @@
-# **Lab 07: Test Deploy**
+# Lab 07: Test Deploy
 
-## **What you will learn**
+## What you will learn
 
   - How to deploy a solution to another environment
 
-## **High-level lab steps**
+## High-level lab steps
 
   - Exercise 1 – Create security roles for users 
     
@@ -20,17 +20,17 @@
 
   - Exercise 4 – Export and import solution 
 
-## **Prerequisites**
+## Prerequisites
 
 Must have completed Lab 02 – Data model and model-driven app
 
 ## Detailed steps
 
-### **Exercise 1: Create security roles**
+### Exercise 1: Create security roles
 
 In this exercise, you create security roles for users.
 
-#### **Task 1: Create security roles**
+#### Task 1: Create security roles
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 

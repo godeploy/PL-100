@@ -1,4 +1,4 @@
-# **Lab 05: Power Automate**
+# Lab 05: Power Automate
 
 In this lab, you will create Power Automate flows to automate various parts of the Company 311 solution.
 
@@ -10,7 +10,7 @@ The following have been identified as requirements you must implement to complet
 
   - How to use a business rule to implement logic.
 
-## **What you will learn**
+## What you will learn
 
   - How to design data fields to support automation 
 
@@ -18,7 +18,7 @@ The following have been identified as requirements you must implement to complet
 
   - How to use approvals 
 
-## **High-level lab steps**
+## High-level lab steps
 
   - Exercise 1 – add fields to support escalation 
 
@@ -26,7 +26,7 @@ The following have been identified as requirements you must implement to complet
 
   - Exercise 3 – build flow to notify user of status change
 
-## **Prerequisites**
+## Prerequisites
 
 Must have completed Lab 02 – Data model and model-driven app
 
@@ -36,11 +36,11 @@ Must have completed Lab 02 – Data model and model-driven app
 
 ## Detailed steps  
 
-### **Exercise 1: Build notify flow**
+### Exercise 1: Build notify flow
 
 In this exercise, you create a flow that will notify the creator of a problem when the status changes.
 
-#### **Task 1: Create flow**
+#### Task 1: Create flow
 
 In this task, you will create a flow that send notification when the status of problem report record changes.
 
@@ -262,7 +262,7 @@ In this task, you will create the escalation flow.
 
 26. Enter **Cost approval required** for **Title**.
 
-27. Click to select the Assigned to filed.
+27. Click to select the **Assigned to** field.
 
 28. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
 
@@ -300,7 +300,7 @@ In this task, you will create the escalation flow.
 
 41. Click **Show advanced options**.
 
-42. Click to select the **Resolution** filed, go to the **Dynamic content** pane, and select **Response summary**.
+42. Click to select the **Resolution** field, go to the **Dynamic content** pane, and select **Response summary**.
 
 43. Select **Won’t fix** for **Status Reason**.
 
@@ -326,7 +326,7 @@ In this task, you will test the escalation flow
 
 3.  Click to open on of the **Problem Report** records.
 
-4.  Scroll down, enter 2500 for Estimated Cost, assign it to yourself (for test purposes), and click Save.
+4.  Scroll down, enter 2500 for **Estimated Cost**, assign it to yourself (for test purposes), and click **Save**.
 
 5.  Navigate to [Power Automate](https://us.flow.microsoft.com/en-us/)
 
