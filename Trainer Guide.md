@@ -643,12 +643,12 @@ In this lab, students will build a Power BI dashboard that visualizes data relat
 
 #### Items to watch out for
 
-Students will need to have Power BI desktop installed on their local machine to build data sets and transform data. Students that do not have Power BI Desktop installed should download it from the Microsoft downloads page: <https://www.microsoft.com/en-us/download/details.aspx?id=58494>.
+Students will need to have Power BI desktop installed on their local machine to build data sets and transform data. Students that do not have Power BI Desktop installed should download it from the Microsoft downloads page: [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
 > [!IMPORTANT]
-> While students can install it from the Windows Store, do not have them install from there. They will likely receive permission errors.
+> While students can install it from the Windows Store, it is not recommended to have them install from there. They will likely receive permission errors.
 
-Some students may not be able to download the application at all because of permission restrictions on their machine. In those instances, the .pbix file that students create is included. Students can load that into Power BI and build the report in Power BI.com.
+Some students may not be able to download the application at all because of permission restrictions on their machine. In those instances, the .pbix file that students create is included. Students can load that into Power BI and build the report in Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). These steps are outlined in **Exercise 4**.
 
 ### Lab 07 Model-driven app
 

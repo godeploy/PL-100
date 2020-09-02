@@ -37,11 +37,15 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 #### Task 1: Configure Power BI Desktop
 
-1. If you do not have Power BI Desktop installed, open https://aka.ms/pbidesktopstore to download and install Power BI app.
+1. If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app.
+
+> [!IMPORTANT]
+> If you experience issues installing Power BI Desktop using Microsoft Store, try standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+
 2. Open Power BI Desktop
-3. If you were signed in into Power BI Desktop previously, select **File | Sign out** 
-4. Sign in if prompted or select **File | Sign in** to sign in.  
-5. If you're signing in for the first time you may receive the following prompt
+2. If you were signed in into Power BI Desktop previously, select **File | Sign out** 
+3. Sign in if prompted or select **File | Sign in** to sign in.  
+4. If you're signing in for the first time you may receive the following prompt
 
 ![Prompt to sign up for Power BI account if opened for the first time](06/media/image-6-2.png)
 
@@ -245,18 +249,20 @@ This will open the published report in the browser.
 
 ## Exercise 4: Import sample data
 
-1. Download [problem-reports-data.pbix](06\Resources\problem-reports-data.pbix) and save on your computer
-2. Navigate to https://app.powerbi.com/
-3. Click **My Workspace**
-4. Expand **+New** and select **Upload a file**
+In this exercise you will import sample data into Power BI service. That allows you to complete the lab exercises even if do not have required permissions to install desktop applications, or experience difficulties in configuring Power BI Desktop and connecting it to the data. After completion of this exercise you can resume the lab on **Exercise 2** and use Power BI service ([https://app.powerbi.com](https://app.powerbi.com)) instead of Power BI Desktop. 
+
+1. Download [problem-reports-data.pbix](06\Resources\problem-reports-data.pbix) and save on your computer.
+2. Navigate to [https://app.powerbi.com/](https://app.powerbi.com/).
+3. Click **My Workspace**.
+4. Expand **+New** and select **Upload a file**.
 
 ![image-20200813231726672](06/media/image-6-29.png)
 
-5. Select **Local File**
+5. Select **Local File**.
 6. Locate and select **problem-report-data.pbix** file you've downloaded earlier.
 7. Once data load is complete, select **problem-reports-data** report.
-8. Click **...** then select **Edit**
+8. Click **...** then select **Edit**.
 
 ![image-20200813232037732](06/media/image-6-30.png)
 
-9. Continue on **Exercise 2**
+9. Continue on **Exercise 2**.
