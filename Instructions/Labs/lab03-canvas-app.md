@@ -60,6 +60,22 @@ In this task, you will import the shared components solution into your environme
 
 ![Imported solution components - screenshot](03/media/image2.png)
 
+> [!IMPORTANT]
+> There is an issue where importing the app as part of a solution may not add it to your components library. The following steps are designed to resolve the issue.
+
+11. Navigate to **Apps**, Select the **Lamna Healthcare Shared Components App**.
+12. Click the **Edit Icon** to edit the app.
+
+![Edit components app](03/media/image2-1.png)
+
+13. After the app opens, click **File** > **Save As**.
+14. Save the app as **Lamna Healthcare Share Components A**.
+
+![Save component app under a new name - screenshot](03/media/image2-2.png)
+
+15. Click **OK**.
+16. Close the **Lamna Healthcare Shared Components** tab in your browser.
+
 #### **Task 2: Create view**
 
 In this task, you will create a view that will show the current user’s problem reports. Later you will use this view with the filter function in the canvas app.
@@ -128,63 +144,74 @@ In this task, you will create a canvas application using the phone form factor.
 
 ![Insert component - screenshot](03/media/image11.png)
 
-12. Expand **Custom**, select **Header Control** and **Tab Control**. These are both components from the library you imported earlier in the lab.
+12. Select **Get more Components**.
 
-![Select controls - screenshot ](03/media/image12.png)
+![Get more components - screenshot](03/media/image12-1.png)
 
-13. Move the **Tab Control** to the bottom of the screen and the **Header Control** to the top of the screens.
+13. Expand the **Lamna Healthcare Shared Components A** Library, and select **Header** and **Tab Control**.
 
-14. Select the **Header Control** and change the **Text** value to **"Company 311".**
+![Import header and tab controls from the library - screenshot](03/media/image12-2.png)
+
+14. Click **Import**.
+
+15. Expand **Library components**, select **Header Control** and **Tab Control**. These are both components from the library you imported earlier in the lab.
+
+![Select and insert controls into the app - screenshot](03/media/image12-3.png)
+
+16. Move the **Tab Control** to the bottom of the screen and the **Header Control** to the top of the screens.
+
+18. Select the **Header Control** and change the **Text** value to **"Company 311".**
 
 ![Change text value - screenshot](03/media/image13.png)
 
-15. Right click on the Main Screen and select Duplicate screen.
+19. Right click on the Main Screen and select Duplicate screen.
 
 ![Duplicate screens - screenshot](03/media/image14.png)
 
-16. Rename the new screen **My Reports Screen**.
+20. Rename the new screen **New Reports Screen**.
 
-17. Select the **Tree view**, select **App** and change the **OnStart** value to the formula below. This formula will create a new variable named My Tabs and set it to a table of tab items.
+21. Select the **Tree view**, select **App** and change the **OnStart** value to the formula below. This formula will create a new variable named My Tabs and set it to a table of tab items.
 
 ```javascript
 Set('My Tabs', Table( {
-	Label: 'My Reports',
+	Label: "My Reports",
 	Screen: 'Main Screen',
-	Icon: '',
-	SelectedIcon:''
+	Icon: "",
+	SelectedIcon:""
 },
 {
-	Label: 'New Report',
+	Label: "New Report",
 	Screen: 'New Report Screen',
-	Icon: '',
-	SelectedIcon:''
+	Icon: "",
+	SelectedIcon:""
 }
 ))
 ```
 
-
+> [!IMPORTANT]
+> When expressions are copied, the quotes and double quotes are sometimes replaced with their "smart" counterparts which are not valid in formulas. If you copy and paste the expression above, make sure the resulting formula does not contain any errors.     
 
 ![tab data variable - screenshot](03/media/image15.png)
 
-18. Select the **Tab Control** in the **Main Screen** and change the **Items** value to **‘My Tabs’**.
+22. Select the **Tab Control** in the **Main Screen** and change the **Items** value to **‘My Tabs’**.
 
 ![Set tab items - screenshot](03/media/image16.png)
 
-19. Change the **SelectedColor** value to **WhiteSmoke**.
+23. Change the **SelectedColor** value to **WhiteSmoke**.
 
-20. Select the **Tab Control** inside the **New Report Screen** and set the Item value to **‘My Tabs’**.
+24. Select the **Tab Control** inside the **New Report Screen** and set the Item value to **‘My Tabs’**.
 
-21. Change the **SelectedColor** value to **WhiteSmoke**.
+25. Change the **SelectedColor** value to **WhiteSmoke**.
 
-22. Click on the **…** button of the **App** and select **Run OnStart**.
+26. Click on the **…** button of the **App** and select **Run OnStart**.
 
 ![Run app on start - screenshot](03/media/image17.png)
 
-23. Your tabs should now show the two tabs you added.
+27. Your tabs should now show the two tabs you added.
 
 ![Tab with data - screenshot](03/media/image18.png)
 
-25\. Do not navigate away from this page.
+28. Do not navigate away from this page.
 
 ### **Exercise 2: My reports**
 
