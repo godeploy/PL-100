@@ -106,7 +106,7 @@ In this task, you will create a flow that send notification when the status of p
 
 26. Type **Current Status:** go to the Dynamic pane, select the **Expression** tab, paste the expression below, and click OK. This expression will show the label of the option set instead of the value.
 
-`triggerOutputs()?\['body/\_statuscode\_label'\]`
+`triggerOutputs()?['body/_statuscode_label']`
 
 ![Set expression value - screenshot](05/media/image6.png)
 
@@ -274,7 +274,7 @@ In this task, you will create the escalation flow.
 
 30. Place your cursor after cost of , go to the Dynamic content pave, select the Expression tab, paste the expression below, and click OK.
 
-`formatNumber(triggerOutputs()?\['body/lh\_estimatedcost'\], 'C2')`
+`formatNumber(triggerOutputs()?['body/lh_estimatedcost'], 'C2')`
 
 ![Add expression - screenshot](05/media/image14.png)
 
