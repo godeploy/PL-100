@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Lab: Power Automate'
+    module: 'Module 5: Power Automate'
+---
+
 # Lab 05: Power Automate
 
 In this lab, you will create Power Automate flows to automate various parts of the Company 311 solution.
@@ -28,7 +34,8 @@ The following have been identified as requirements you must implement to complet
 
 ## Prerequisites
 
-Must have completed Lab 02 – Data model and model-driven app
+* Must have completed **Lab 02: Data model and model-driven app**
+* Must have completed **Lab 04: Business Process Flows and Business Rules**
 
 ## Things to consider before you begin
 
@@ -130,7 +137,7 @@ In this task, you will create a flow that send notification when the status of p
 
 34. Do not navigate away from this page.
 
-#### **Task 2: Test the flow**
+#### Task 2: Test the flow
 
 In this task, you will test the notify problem creator flow.
 
@@ -168,11 +175,11 @@ In this task, you will test the notify problem creator flow.
 
 ![Email from flow - screenshot](05/media/image11.png)
 
-### **Exercise 2: Build escalation flow**
+### Exercise 2: Build escalation flow
 
 In this exercise, you create add two new fields to the problem report entity and create escalation flow.
 
-#### **Task 1: Add fields**
+#### Task 1: Add fields
 
 In this task, you add a new fields to the problem report entity.
 
@@ -204,7 +211,7 @@ In this task, you add a new fields to the problem report entity.
 
 13. Select **Solution**, click **Publish all customizations**, and wait for the publishing to complete.
 
-#### **Task 2: Build escalation flow**
+#### Task 2: Build escalation flow
 
 In this task, you will create the escalation flow.
 
@@ -316,7 +323,7 @@ In this task, you will create the escalation flow.
 
 48. Click **Done** on the popup.
 
-#### **Task 3: Test flow**
+#### Task 3: Test flow
 
 In this task, you will test the escalation flow
 

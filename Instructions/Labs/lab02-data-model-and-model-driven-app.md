@@ -1,4 +1,10 @@
-# Lab 02 – Data model and model-driven app
+---
+lab:
+    title: 'Lab: Data model and model-driven app'
+    module: 'Module 3: Building model-driven apps'
+---
+
+# Lab 02: Data model and model-driven app
 
 In this lab you will be implementing the data model for the solution and building a model-driven app that will be used by anyone fixing problems or managing the overall effort.
 
@@ -68,11 +74,11 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
 ![Solution list - screenshot](02/media/image4.png)
 
-### **Exercise 2: Implement data model**
+### Exercise 2: Implement data model
 
 In this exercise, you will create entities, fields, and the relationships you identified when you designed the data model for the Company 311 app.
 
-#### **Task 1: Create entities**
+#### Task 1: Create entities
 
 1.  In the [Power Apps maker portal](https://make.powerapps.com/) select **Solutions** and click to open the **Company 311** solution you created in Exercise 1.
 
@@ -112,7 +118,7 @@ In this exercise, you will create entities, fields, and the relationships you id
 
 ![Confirm changes - screenshot](02/media/image11.png)
 
-#### **Task 2: Add fields**
+#### Task 2: Add fields
 
 In this task, you will add fields to the Problem Report entity.
 
@@ -168,7 +174,7 @@ In this task, you will add fields to the Problem Report entity.
 
 19. Do not navigate away from this page.
 
-#### **Task 3: Edit status reason option set**
+#### Task 3: Edit status reason option set
 
 In this task, you will edit the status reason field of the problem report entity.
 
@@ -229,7 +235,7 @@ In this task, you will edit the status reason field of the problem report entity
 
 19. Do not navigate away from this page.
 
-#### **Task 4: Relationships**
+#### Task 4: Relationships
 
 In this task, you will create many to one relationships between the problem report entity and the building and department entities.
 
@@ -259,11 +265,11 @@ In this task, you will create many to one relationships between the problem repo
 
 10. Click **Publish all customizations** and wait for the publishing to complete.
 
-### **Exercise 3: Configure form and views**
+### Exercise 3: Configure form and views
 
 In this exercise, you will configure form and views for the problem report entity.
 
-#### **Task 1: Configure form**
+#### Task 1: Configure form
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -343,7 +349,7 @@ In this exercise, you will configure form and views for the problem report entit
 
 25. Do not navigate away from this page.
 
-#### **Task 2: Edit view**
+#### Task 2: Edit view
 
 1.  Select the **Views** tab and click to open the **Active Problem Reports** view.
 
@@ -381,7 +387,7 @@ In this exercise, you will configure form and views for the problem report entit
 
 11. Do not navigate away from this page.
 
-#### **Task 3: Create view from existing**
+#### Task 3: Create view from existing
 
 In this task, you will create a new view from the Active Problem Reports view.
 
@@ -425,11 +431,11 @@ In this task, you will create a new view from the Active Problem Reports view.
 
 ![Publish all customizations - screenshot](02/media/image59.png)
 
-### **Exercise 4: Compose model-driven application**
+### Exercise 4: Compose model-driven application
 
 In this exercise, you will create model-driven application.
 
-#### **Task 1: Create new model-driven application**
+#### Task 1: Create new model-driven application
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -537,11 +543,11 @@ In this exercise, you will create model-driven application.
 
 ![Done creating application - screenshot](02/media/image79.png)
 
-### **Exercise 5: Input data**
+### Exercise 5: Input data
 
 In this exercise, you will input data.
 
-#### **Task 1: Input data**
+#### Task 1: Input data
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -611,11 +617,11 @@ In this exercise, you will input data.
 
 24. You may add more records.
 
-### **Exercise 6: Import data**
+### Exercise 6: Import data
 
 In this exercise, you will import sample data into your environment. Records are imported by a Power Automate flow that you will first import using a solution.
 
-#### **Task 1: Import solution**
+#### Task 1: Import solution
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -635,7 +641,7 @@ In this exercise, you will import sample data into your environment. Records are
 
 9.  Click **Close** the to close the solution import wizard.
 
-### **Task 2: Review and run flow**
+#### Task 2: Review and run flow
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -681,7 +687,7 @@ In this exercise, you will import sample data into your environment. Records are
 
 18. Click **Done** on the popup
 
-### **Task 3: Review imported data**
+#### Task 3: Review imported data
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
