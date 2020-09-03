@@ -28,7 +28,8 @@ The following have been identified as requirements you must implement to complet
 
 ## Prerequisites
 
-Must have completed Lab 02 – Data model and model-driven app
+* Must have completed Lab 02: Data model and model-driven app
+* Must have completed Lab 04: Business Process Flows and Business Rules
 
 ## Things to consider before you begin
 

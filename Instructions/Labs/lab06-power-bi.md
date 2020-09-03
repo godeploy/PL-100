@@ -16,7 +16,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ## Prerequisites
 
-* Must have completed Lab 02 – Data model and model-driven app
+* Must have completed Lab 02: Data model and model-driven app
 * Permissions to install programs on your computer (required for Power BI Desktop installation)
 
 ## Things to consider before you begin
