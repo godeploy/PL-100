@@ -1,3 +1,9 @@
+---
+lab:
+    title: 'Lab: Design the solution'
+    module: 'Module 1: Introduction to Power Platform'
+---
+
 # Lab 01: Design the solution
 
 In this lab you will be shaping your idea into something that can be implemented on the Power Platform.   As part of this you will meet with other people in your organization to get more clarity on how your idea could be implemented.  Using this information, you will identify what applications and automations need to be built.
@@ -44,7 +50,7 @@ Read the following scenario and make note of any key points you think might be i
 
 In this exercise, you review the text from an interview you had with a couple of colleagues. In each of these interviews you shared your idea for a Company 311 solution and got feedback from your coworkers. You should use this information to shape the solution design.
 
-#### **Task 1: Interview \#1**
+#### Task 1: Interview \#1
 
 Review the following discussion with your coworker and take notes of any of the key things you learned from the interaction. This Interview is from a coworker in your same Department that you are friends with.
 
@@ -72,7 +78,7 @@ Review the following discussion with your coworker and take notes of any of the 
 
 After you complete reading this and have your notes compare them to our notes in the next task to see if you missed anything.
 
-#### **Task 2: Interview \#1 Notes**
+#### Task 2: Interview \#1 Notes
 
 In this task, you will compare your notes from Interview \#1 with our notes.
 
@@ -90,7 +96,7 @@ The following are our notes from Interview \#1
 
   - Need to see all the problems you submitted and their status
 
-#### **Task 3: Interview \#2**
+#### Task 3: Interview \#2
 
 Review the following discussion with your coworker and take notes of any of the key things you learned from the interaction. This Interview is from a coworker in facilities management that you are friends with. You believe most of the problem reports will be handled by them.
 
@@ -114,7 +120,7 @@ Review the following discussion with your coworker and take notes of any of the 
 
 After you complete reading this and have your notes compare them to our notes in the next task to see if you missed anything.
 
-#### **Task 4: Interview \#2 Notes**
+#### Task 4: Interview \#2 Notes
 
 In this task, you will compare your notes from Interview \#2 with our notes.
 
@@ -126,11 +132,11 @@ The following are our notes from Interview \#2
 
   - Approval required over specific amount, would be helpful to automate
 
-### **Exercise 3: Design a data model**
+### Exercise 3: Design a data model
 
 In this exercise, you will create the data model to support the apps you will be building.
 
-#### **Task 1: Evaluate what you know already about the data**
+#### Task 1: Evaluate what you know already about the data
 
 In this task, you will be evaluating the information you already collected about your proposed solution and trying to identify what data entities are needed and how they are related. If you want, you can do this task concurrently with the next task where you draw the data model.
 
@@ -142,7 +148,7 @@ In this task, you will be evaluating the information you already collected about
 
 4.  Evaluate what should be fields and what should be entities. For example, how should the photo be stored or the location within the building?
 
-#### **Task 2: Draw a draft data model**
+#### Task 2: Draw a draft data model
 
 Use whatever tools you have available; you can use a whiteboard, Visio, PowerPoint, OneNote, or you can even use it piece of paper and pen. The goal here is not to be picture perfect but to allow you to think through what the data model should look like and possibly share with others and get their ideas. This data model typically will be your guide when you are creating the entities in the maker portal. Well you could of course just start creating the entities in the portal by creating a diagram helps ensure it's a little bit more well thought out.
 
@@ -152,17 +158,17 @@ Use whatever tools you have available; you can use a whiteboard, Visio, PowerPoi
 
 2.  After you complete your drawing proceed to the next task.
 
-#### **Task 3: Compare data models**
+#### Task 3: Compare data models
 
 In this task, you will compare the data model you created in the previous task with the one we prepared. If there are significant differences you should discuss those with your instructor.
 
 ![A close up of text on a whiteboard with a data model showing problem report, department and building](01/media/image2.png)
 
-### **Exercise 4: Identify apps and automation needed**
+### Exercise 4: Identify apps and automation needed
 
 In this exercise, you will be looking at the information you collected and deciding what apps and automation is required to implement the solution. The goal is not to identify every feature of the application or automation but to identify do you need one app or ten apps and what style app are they.
 
-#### **Task 1: Evaluate what apps are needed**
+#### Task 1: Evaluate what apps are needed
 
 In this task you are going to look at how the users interact with the applications and decide if you need one or multiple applications and what style they're going to be, i.e. canvas or model-driven. There is no single right answer to how to accomplish this, but by asking the right questions you can lead down a path of getting a better solution for your users. As you go through the following steps make some notes that is applicable for your Company 311 solution.
 
@@ -180,7 +186,7 @@ In this task you are going to look at how the users interact with the applicatio
 
 7.  After you complete these continue to the next task to compare notes.
 
-#### **Task 2: Compare your notes on apps**
+#### Task 2: Compare your notes on apps
 
 In this task, you should compare your notes from the previous task with our prepared notes. If there are big differences you should discuss them with your instructor.
 
@@ -218,11 +224,11 @@ In this task, you should compare your notes from the previous task with our prep
     
       - App 2 – Company 311 Admin - This will be a model driven application used by all those that route and resolve problem reports. this application will also manage all the reference data like buildings and department lists.
 
-### **Exercise 5: User story, app UI mockup**
+### Exercise 5: User story, app UI mockup
 
 In this exercise, you will review a user story that describes a user interacting with the app to submit a problem report.
 
-#### **Task 1: User Story**
+#### Task 1: User Story
 
 Review the following user story:
 
@@ -232,7 +238,7 @@ Review the following user story:
 
 2.  After you have completed your drawing of the mockup go ahead to the next task and compare it to the one we provide.
 
-#### **Task 2: Compare mockup**
+#### Task 2: Compare mockup
 
 The following is an example UI mockup showing both the add new item an My reports list. There is no single answer to what this has to look like and there are possibly many examples you could come up with. The goal for UI markup is to be able to quickly demonstrate what you want to build and show it to somebody and without having to actually build it. Depending on the tool you used you can often make changes quickly as you evolve the mockup. The markup is used to help you build the actual applications screens quicker with less rework.
 

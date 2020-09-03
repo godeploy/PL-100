@@ -1,4 +1,12 @@
-# Lab 07: Test Deploy
+---
+lab:
+    title: 'Lab: Test & Deploy'
+    module: 'Module 8: Testing & deployment'
+---
+
+# Lab 07: Test & Deploy
+
+In this lab you will complete solution configuration by adding security roles for the users. Then you will verify, test, and deploy your solution in the production environment.
 
 ## What you will learn
 
@@ -22,7 +30,7 @@
 
 ## Prerequisites
 
-* Must have completed Lab 02: Data model and model-driven app
+* Must have completed **Lab 02: Data model and model-driven app**
 
 ## Detailed steps
 
@@ -68,11 +76,11 @@ In this exercise, you create security roles for users.
 
 15. Click **Publish all customizations** and wait for the publishing to complete.
 
-### **Exercise 2: Solution checker**
+### Exercise 2: Solution checker
 
 In this exercise, you will run the solution checker on the Company 311 solution.
 
-#### **Task 1: Run solutions checker**
+#### Task 1: Run solutions checker
 
 1.  Make sure you are still on the [Power Apps maker portal](https://make.powerapps.com/) site and you are in the correct environment.
 
@@ -88,11 +96,11 @@ In this exercise, you will run the solution checker on the Company 311 solution.
 
 5.  Review the solution check results and make sure there are no issues.
 
-### **Exercise 3: Use test studio**
+### Exercise 3: Use test studio
 
 In this exercise, you create use test studio to create test case for submitting a problem report.
 
-#### **Task 1: Create test case**
+#### Task 1: Create test case
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -154,11 +162,11 @@ In this exercise, you create use test studio to create test case for submitting 
 
 26. Click Done on the popup.
 
-### **Exercise 4: Import export**
+### Exercise 4: Import export
 
 In this exercise, you will export the company 311 solution and import it into a new environment.
 
-#### **Task 1: Export solution**
+#### Task 1: Export solution
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -180,7 +188,7 @@ In this exercise, you will export the company 311 solution and import it into a 
 
 9.  You should have the managed and unmanaged versions of the solution exported.
 
-#### **Task 2: Create new environment and import solution**
+#### Task 2: Create new environment and import solution
 
 1.  Navigate to the [Power Apps admin portal](http://aka.ms/ppac)
 

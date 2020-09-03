@@ -1,4 +1,12 @@
+---
+lab:
+    title: 'Lab: Canvas app'
+    module: 'Module 4: Building canvas apps'
+---
+
 # Lab 03: Canvas app
+
+In this module you will design and build a canvas app for the company employees to submit problem reports.
 
 ## What you will learn
 
@@ -24,7 +32,7 @@
 
 ## Prerequisites
 
-* Must have completed Lab 02: Data model and model-driven app
+* Must have completed **Lab 02: Data model and model-driven app**
 
 ## Detailed steps
 
@@ -32,7 +40,7 @@
 
 In this exercise, you will import a solution with shared components, create a view for the problem report entity, and create a canvas application.
 
-#### **Task 1: Import component library solution**
+#### Task 1: Import component library solution
 
 In this task, you will import the shared components solution into your environment. This shared component library was built by another team at your company.
 
@@ -76,7 +84,7 @@ In this task, you will import the shared components solution into your environme
 15. Click **OK**.
 16. Close the **Lamna Healthcare Shared Components** tab in your browser.
 
-#### **Task 2: Create view**
+#### Task 2: Create view
 
 In this task, you will create a view that will show the current user’s problem reports. Later you will use this view with the filter function in the canvas app.
 
@@ -108,7 +116,7 @@ In this task, you will create a view that will show the current user’s problem
 
 10. Click on the **Back** button.
 
-#### **Task 3: Create the user application**
+#### Task 3: Create the user application
 
 In this task, you will create a canvas application using the phone form factor.
 
@@ -213,11 +221,11 @@ Set('My Tabs', Table( {
 
 28. Do not navigate away from this page.
 
-### **Exercise 2: My reports**
+### Exercise 2: My reports
 
 In this exercise, you will add a gallery that will show reports created by the current logged in user.
 
-#### **Task 1: Add gallery**
+#### Task 1: Add gallery
 
 1.  Select the **Main Screen**, go to the **Insert** tab, click **Gallery**, and select **Vertical**.
 
@@ -249,11 +257,11 @@ In this exercise, you will add a gallery that will show reports created by the c
 
 10. Do not navigate away from this page.
 
-### **Exercise 3: Allow removing reports**
+### Exercise 3: Allow removing reports
 
 In this exercise, you will allow unassigned reports to be removed. This will allow users to easily remove any accidental reports.
 
-#### **Task 1: Allow remove**
+#### Task 1: Allow remove
 
 1.  Select the **Main Screen**, go to the **Insert** tab, click **Gallery**, and select **Vertical**.
 
@@ -279,11 +287,11 @@ In this exercise, you will allow unassigned reports to be removed. This will all
 
 7.  Do not navigate away from this page.
 
-### **Exercise 4: Add new report**
+### Exercise 4: Add new report
 
 In this exercise, you will add a form to submit new problem reports.
 
-#### **Task 1: Add new report form**
+#### Task 1: Add new report form
 
 1.  Select the **New Report Screen**, go to the **Insert** tab, click **Form**, and select **Edit**.
 
@@ -347,11 +355,11 @@ In this exercise, you will add a form to submit new problem reports.
 
 23. Do not navigate away from this page.
 
-### **Exercise 5: Test the application**
+### Exercise 5: Test the application
 
 In this exercise, you will test the canvas application you created by submitting a problem report.
 
-#### **Task 1: Test application**
+#### Task 1: Test application
 
 1.  Select the **Main Screen** and click **Preview the app**.
 

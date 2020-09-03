@@ -1,4 +1,12 @@
+---
+lab:
+    title: 'Lab: Business Process Flows and Business Rules'
+    module: 'Module 3: Building model-driven apps'
+---
+
 # Lab 04: Business Process Flows and Business Rules
+
+In this lab you will enhance the data model and improve the app behavior by adding a business process flow and a business rule.
 
 ## What you will learn
 
@@ -22,7 +30,7 @@
 
 ## Prerequisites
 
-* Must have completed Lab 02: Data model and model-driven app
+* Must have completed **Lab 02: Data model and model-driven app**
 
 ## Detailed steps
 
@@ -30,7 +38,7 @@
 
 In this exercise, you will create a business process flow for the problem report entity.
 
-#### **Task 1: Customize entity**
+#### Task 1: Customize entity
 
 In this task, you will add a lookup field to the problem report entity.
 
@@ -54,7 +62,7 @@ In this task, you will add a lookup field to the problem report entity.
 
 8.  Click **Publish all customizations** and wait for the publishing to complete.
 
-#### **Task 2: Create business process flow**
+#### Task 2: Create business process flow
 
 In this task, you will create a business process flow for the problem report entity.
 
@@ -138,7 +146,7 @@ In this task, you will create a business process flow for the problem report ent
 
 33. Close the process editor browser window or tab.
 
-#### **Task 3: Add business process flow to solution**
+#### Task 3: Add business process flow to solution
 
 In this task, you will add the business process flow you created to the Company 311 solution.
 
@@ -156,11 +164,11 @@ In this task, you will add the business process flow you created to the Company 
 
 5.  Click **Publish all customizations** and wait for the publishing to complete.
 
-### **Exercise 2: Create business rule**
+### Exercise 2: Create business rule
 
 In this exercise, you will create a business rule that will block completion of problems without resolution.
 
-#### **Task 1: Create business rule**
+#### Task 1: Create business rule
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.
 
@@ -220,11 +228,11 @@ In this exercise, you will create a business rule that will block completion of 
 
 20. Click **Done**.
 
-### **Exercise 3: Test processes**
+### Exercise 3: Test processes
 
 In this exercise, you will test the business process flow and the business rule you created.
 
-#### **Task 1: Test processes**
+#### Task 1: Test processes
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.
 

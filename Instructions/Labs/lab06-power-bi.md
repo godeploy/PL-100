@@ -1,30 +1,40 @@
+---
+lab:
+    title: 'Lab: Power BI'
+    module: 'Module 6: Power BI'
+---
+
 # LAB 06: Power BI
-# Scenario
 
 In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.
 
-# High-level lab steps
+## What you will learn
+
+  - How to connect to the data 
+  - How to refine the data model and prepare it for reporting
+  - How to create a Power BI visualization 
+
+## High-level lab steps
 
 We will follow the below steps to design and create the Power BI dashboard:
 
 -   Connect to Common Data Service 
 -   Transform the data to include user-friendly descriptions for the related records (lookups)
--    Create and publish a report with various visualizations of the campus visits information
+-    Create and publish a report with various visualizations of the information about problem reports
 -    User natural language query to build additional visualizations
 -    Build mobile view
 
-
 ## Prerequisites
 
-* Must have completed Lab 02: Data model and model-driven app
+* Must have completed **Lab 02: Data model and model-driven app**
 * Permissions to install programs on your computer (required for Power BI Desktop installation)
 
 ## Things to consider before you begin
 
 -   Who is the target audience of the report?
 -   How will the audience consume the report? Typical device? Location?
--   Do you have sufficient data to visualise?
--   What are the possible characteristics you can use to analyse data about the visits?
+-   Do you have sufficient data to visualize?
+-   What are the possible characteristics you can use to analyze data about the visits?
 
 ## Detailed steps
 
@@ -247,7 +257,9 @@ This will open the published report in the browser.
 * Report and analyze problem patterns and trends
 * Problem resolution status visualization as a funnel
 
-## Exercise 4: Import sample data
+## Addendum
+
+### Exercise 4: Import sample data
 
 In this exercise you will import sample data into Power BI service. That allows you to complete the lab exercises even if do not have required permissions to install desktop applications, or experience difficulties in configuring Power BI Desktop and connecting it to the data. After completion of this exercise you can resume the lab on **Exercise 2** and use Power BI service ([https://app.powerbi.com](https://app.powerbi.com)) instead of Power BI Desktop. 
 
