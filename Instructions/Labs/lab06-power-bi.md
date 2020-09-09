@@ -23,6 +23,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 -    Create and publish a report with various visualizations of the information about problem reports
 -    User natural language query to build additional visualizations
 -    Build mobile view
+-    Embed the Company 311 Power BI report to Microsoft Teams
 
 ## Prerequisites
 
@@ -43,7 +44,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 **Objective:** In this exercise, you will install and configure Power BI Desktop and configure a connection to Common Data Service. 
 
 > [!IMPORTANT]
-> If you do not have required permissions to install desktop applications or experience difficulties in configuring Power BI Desktop and connecting it to the data, follow **Exercise 4: Import sample data** and then continue on **Exercise 2** but using Power BI service instead of Power BI Desktop.
+> If you do not have required permissions to install desktop applications or experience difficulties in configuring Power BI Desktop and connecting it to the data, follow **Exercise 5: Import sample data** and then continue on **Exercise 2** but using Power BI service instead of Power BI Desktop.
 
 #### Task 1: Configure Power BI Desktop
 
@@ -251,6 +252,66 @@ This will open the published report in the browser.
 
 7. Navigate and explore reports and dashboards on a mobile device. 
 
+### Exercise 4: Embed Power BI report in Microsoft Teams
+
+In this exercise, you will add the Company 311 Power BI report in Microsoft Teams as a way for management and staff to be able to view the reports from directly within Teams. 
+
+#### Task 1: Setup Company 311 Team
+
+In this task you will setup a Microsoft Teams team for the Lamna Healthcare Company, if you have not done so previously.
+
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the credentials you have been using for the other labs.
+
+2.  Select **Use the web app instead** on the welcome screen.
+
+![Teams Screen](06/media/image-6-teams.png)
+
+3.  When the Microsoft Teams window opens, dismiss the welcome messages.
+
+4.  On the bottom left corner, choose **Join or create a team**.
+
+5.  Select **Create a team**.
+
+![Create Team](06/media/image-6-createteam.png)
+
+6.  Press **Build a team from scratch**.
+
+7.  Select **Public**.
+
+8.  For the Team name choose **Company 311** and select **Create**.
+
+9.  Select **Skip** adding members to Company 311.
+
+10.  Select the **Company 311** team and press **Create more channels** from the main page.
+
+![Create Channel](06/media/image-6-createchannel.png)
+
+11. Enter in **Company 311 Management** and for privacy leave default as **Standard - Accessible to everyone on the team** and press **Add**.
+
+12. Your Microsoft Teams page should look something like the following:
+
+![Teams Setup](06/media/image-6-teamsetup.png)
+
+#### Task 2: Embed Power BI report to Teams
+
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com)
+
+2.  Select the **General** channel of the **Company 311** team.
+
+3.  On the top of the page, press the **+** symbol to add a new tab.
+
+![Add Tab in Teams](06/media/image-6-addpowerbitab.png)
+
+4.  Search for **power** and select **Power BI** from the results.
+
+5.  Expand **My workspace** and select the report you created earlier in this lab.
+
+![Add Power BI Report](06/media/image-6-choosepowerbireport.png)
+
+6.  Click **Save**  You should now see your Power BI report in a tab in Microsoft Teams
+
+![Power BI Report in Teams](06/media/image-6-powerbi.png)
+
 ## Challenges
 
 * Dashboards and reports to include drilldown to individual reports with photos
@@ -259,7 +320,7 @@ This will open the published report in the browser.
 
 ## Addendum
 
-### Exercise 4: Import sample data
+### Exercise 5: Import sample data
 
 In this exercise you will import sample data into Power BI service. That allows you to complete the lab exercises even if do not have required permissions to install desktop applications, or experience difficulties in configuring Power BI Desktop and connecting it to the data. After completion of this exercise you can resume the lab on **Exercise 2** and use Power BI service ([https://app.powerbi.com](https://app.powerbi.com)) instead of Power BI Desktop. 
 
