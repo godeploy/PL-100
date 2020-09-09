@@ -13,6 +13,7 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
   - How to connect to the data 
   - How to refine the data model and prepare it for reporting
   - How to create a Power BI visualization 
+  - How to embed a Power BI report in Microsoft Teams
 
 ## High-level lab steps
 
@@ -260,7 +261,7 @@ In this exercise, you will add the Company 311 Power BI report in Microsoft Team
 
 In this task you will setup a Microsoft Teams team for the Lamna Healthcare Company, if you have not done so previously.
 
-1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the credentials you have been using for the other labs.
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the credentials you have been using previously.
 
 2.  Select **Use the web app instead** on the welcome screen.
 

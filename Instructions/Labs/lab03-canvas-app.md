@@ -11,16 +11,12 @@ In this module you will design and build a canvas app for the company employees 
 ## What you will learn
 
   - Import and use a pre-built component library
-
   - Create a Power Apps canvas app
-
   - Connect to a data source
-
   - Filter data
-
   - Create data records
-
   - Use images with data records
+  - Embed canvas Power App into Microsoft Teams
 
 ## High-level lab steps
 
@@ -401,7 +397,7 @@ In this exercise, you will add the Company 311 Phone App that you created earlie
 
 In this task you will setup a Microsoft Teams team for the Lamna Healthcare Company, if you have not done so previously.
 
-1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and login with the same credentials you have been using for the other labs.
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the same credentials you have been using previously.
 
 2.  Select **Use the web app instead** on the welcome screen.
 
