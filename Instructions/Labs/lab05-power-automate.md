@@ -495,16 +495,16 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should match the comment you provided.
 
-![Updated record - screenshot](0x/media/problemreportadaptivecard.png)
+![Updated record - screenshot](05/media/problemreportadaptivecard.png)
 
 ## **Discussion**
 
   - Would creating a bool field for Approved/Rejected be better?
+  - What are the pros and cons of using Microsoft Teams over regular email?
 
 ## **Bonus exercises**
 
   - Add ability for the users to subscribe to the reported problems and only notify if there is a subscription. 
-
   - Auto-subscribe creator of the problem report.
-
   - How to find out previous value of status reason?
+  - Create your own adaptive card using [Adaptive Cards Designer](https://adaptivecards.io/designer/).
