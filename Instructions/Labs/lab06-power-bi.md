@@ -283,15 +283,6 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 9.  Select **Skip** adding members to Company 311.
 
-10.  Select the **Company 311** team and press **Create more channels** from the main page.
-
-![Create Channel](06/media/image-6-createchannel.png)
-
-11. Enter in **Company 311 Management** and for privacy leave default as **Standard - Accessible to everyone on the team** and press **Add**.
-
-12. Your Microsoft Teams page should look something like the following:
-
-![Teams Setup](06/media/image-6-teamsetup.png)
 
 #### Task 2: Embed Power BI report to Teams
 
