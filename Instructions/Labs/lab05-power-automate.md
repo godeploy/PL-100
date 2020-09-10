@@ -26,11 +26,10 @@ The following have been identified as requirements you must implement to complet
 
 ## High-level lab steps
 
-  - Exercise 1 – add fields to support escalation 
-
-  - Exercise 2 – build flow to approve escalation  
-
-  - Exercise 3 – build flow to notify user of status change
+  - Add fields to support escalation 
+  - Build flow to approve escalation  
+  - Build flow to notify user of status change
+  - Build approval as an adaptive card in Microsoft Teams 
 
 ## Prerequisites
 
@@ -299,7 +298,7 @@ In this task, you will create the escalation flow.
 
 37. Search for **update a record** and select **Update a record** **Common Data Service (Current environment)**.
 
-38. Select Problem Reports for Entity name.
+38. Select **Problem Reports** for **Entity name**.
 
 39. Click to select the **Item ID** field.
 
@@ -354,6 +353,149 @@ In this task, you will test the escalation flow
 11. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should match the comment you provided.
 
 ![Updated record - screenshot](05/media/image18.png)
+
+, if you have not done so previously.
+
+### Exercise 3: Send approval requests as adaptive card in Microsoft Teams
+
+In this exercise, you will setup a team in Microsoft Teams dedicated to the Company 311 applications. You will modify the flow to send the approval request as an adaptive card in Teams chat instead of an approval message.
+
+* Task 1: Setup Company 311 Team
+* Task 2: Modify flow to send adaptive card in Teams chat
+* Task 3: Test adaptive card
+
+#### Task 1: Setup Company 311 Team
+
+In this task you will setup a Microsoft Teams team for the Lamna Healthcare Company, if you have not done so previously.
+
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the same credentials you have been using previously.
+
+2.  Select **Use the web app instead** on the welcome screen.
+
+![Teams Screen](05/media/image-5-teams.png)
+
+3.  When the Microsoft Teams window opens, dismiss the welcome messages.
+
+4.  On the bottom left corner, choose **Join or create a team**.
+
+5.  Select **Create a team**.
+
+![Create Team](05/media/image-5-createteam.png)
+
+6.  Press **Build a team from scratch**.
+
+7.  Select **Public**.
+
+8.  For the Team name choose **Company 311** and select **Create**.
+
+9.  Select **Skip** adding members to Company 311.
+
+
+#### Task 2: Modify flow to send adaptive card in Teams chat
+
+In this task you will replace the approval sent by email with the adaptive card.
+
+1. Locate **Start and wait for an approval** step created earlier in **Exercise 2, Task 2**.
+2. Select **...** then select **Delete**.
+3. Click **+** between the steps to insert a new step then select **Add an action**.
+4. Search for **approval** and select **Create an approval**.
+5. Select **Approve/Reject - Everyone must approve** for **Approval type**.
+6. Enter **Cost approval required** for **Title**.
+7. Click to select the **Assigned to** field.
+8. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
+9. Paste the markdown text below in the **Details** field.
+
+> \*\*{title}\*\*
+>
+> 
+>
+> {details}
+>
+> 
+>
+> This is a \_very\_ expensive item with the estimated cost of
+
+10. Select **{title}** placeholder, go to the **Dynamic content** pane, locate and select **Title** field from **When a problem report is created or updated** step.
+
+11. Select **{details}** placeholder, go to the **Dynamic content** pane, locate and select **Details** field from **When a problem report is created or updated** step.
+
+12. Place your cursor after **cost of** , go to the **Dynamic content** pane, select the **Expression** tab, paste the expression below, and click OK.
+
+`formatNumber(triggerOutputs()?['body/lh_estimatedcost'], 'C2')`
+
+13. Your step should look like the following:
+
+![Create an approval action](05/media/image-5-create-approval.png)
+
+14. Select **+** then select **Add an action**.
+
+15. Search for **teams** and select **Post your own adaptive card as the Flow bot to a user** action.
+
+16. Click to select the **Recipient** field.
+
+17. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
+
+18. Click to select **Message** field.
+
+19. Go to the **Dynamic content** pane and select **Adaptive card** from the **Create an approval** step.
+
+20. Select **+** then select **Add an action**.
+
+21. Search for **approval** and select **Wait for an approval** action.
+
+22. Select **Approval ID** field.
+
+23. Go to the **Dynamic content** pane and select **Approval ID** from the **Create an approval** step.
+
+![Wait for approval action](05/media/image-5-wait-for-approval.png)
+
+24. You now have replaced **Start and wait for an approval** step with the following:
+
+![Steps to replace start and wait approval action](05/media/image-5-replaced-approval.png)
+
+25. Expand **Condition 2** step. The left side of the condition should be empty because it was referring the step now removed. 
+
+26. Go to the **Dynamic content** pane, search for **outcome,** and select **Outcome** from **Create an approval** step. 
+
+27. Local **Update problem report** step under **If yes** branch.
+
+28. Click **Show advanced options**.
+
+29. Click to select the **Resolution** field, go to the **Dynamic content** pane, and select **Response summary** from **Create an approval** step.
+
+#### Task 3: Test flow
+
+In this task, you will test the escalation flow with the Teams and adaptive cards.
+
+1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
+
+2.  Select **Apps** and click to open the **Company 311 Admin** application.
+
+3.  Click to open one of the **Problem Report** records.
+
+4.  Scroll down, enter any amount greater than **1000** for **Estimated Cost**, assign it to yourself (for test purposes), and click **Save**.
+
+5.  Navigate to [Microsoft Teams](https://teams.microsoft.com)
+
+6.  Select **Chat**.
+
+7. You should see the Cost Approval Required Adaptive Card.
+
+![Approval adaptive card](05/media/image-5-sample-adaptive-card.png)  
+
+8. Press **Reject** button and enter a comment of your choice in the Comments area, for example **The item is too expensive**.
+
+9. Select **Submit**.  The card will become read-only.
+
+![Read-only completed approval adaptive card](05/media/image-5-readonly-card.png)
+
+10. Go back to the **Company 311 Admin** application.
+
+11. Change the view to **My Reports** and click to open the same record you change the estimated cost.
+
+12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should match the comment you provided.
+
+![Updated record - screenshot](0x/media/problemreportadaptivecard.png)
 
 ## **Discussion**
 
