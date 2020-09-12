@@ -473,6 +473,12 @@ The next day at work you met with your friend in the facility department and
 
 Trainers should clearly explain the objective of every lab and outline high-level solution components and techniques. Students then should be encouraged to design and build their own solutions without following step by step instructions for every exercise.
 
+### Microsoft Teams
+
+The world has changed rapidly in the recent months and organizations need tools to work collaboratively yet remotely.  Microsoft Teams provides a powerful platform for collaboration and communication, and also provides an app maker with additional options when deploying apps and building business processes.  Consider ways some of your business apps and processes could be elevated by integrating with Microsoft Teams. 
+
+To help students better understand Microsoft Teams as a communication and collaboration mechanism, some of the labs include additional exercises highlighting integration of the Power Platform components in Microsoft Teams.
+
 ### Components
 
 Completed components are available for *all* exercises. They include canvas apps, model-driven app, power automation flows, Power BI pbix file, sample data and data import map, and complete solution exported as both managed and unmanaged. Components shouldn’t be used as a shortcut to exercise completion. Instead, they are useful as a demo tool and as a general point of reference.
@@ -599,22 +605,23 @@ Keeping in mind the requirements above, students will add additional fields that
 #### Topics to discuss
 
   - Flows in solutions
-
   - CDS connectors (standard vs current environment)
-
   - Other automation means in Power Platform (real-time workflow, UI automation)
-
   - Human interaction with flows - approval processes
-
+  - Using adaptive cards instead of approval emails
   - Testing the processes during the build
-
   - Sharing the flows
-
   - Monitoring running processes
 
 #### Items to watch out for
 
-There are no real issues that occur during this lab. The biggest item is that students begin to drift a little towards the end of exercise three. Many of the steps are similar and start to run together.
+Adding **Wait for an approval** action sometimes generates the following error message: 
+
+> Http request failed with unhandled exception of type 'NullReferenceException' and message: 'Object reference not set to an instance of an object.'.
+
+This message can be ignored. 
+
+There are no any other real issues that occur during this lab. The biggest item is that students begin to drift a little towards the end of exercise three. Many of the steps are similar and start to run together.
 
 ### Lab 06 Power BI
 
@@ -648,7 +655,7 @@ Students will need to have Power BI desktop installed on their local machine to 
 > [!IMPORTANT]
 > While students can install it from the Windows Store, it is not recommended to have them install from there. They will likely receive permission errors.
 
-Some students may not be able to download the application at all because of permission restrictions on their machine. In those instances, the .pbix file that students create is included. Students can load that into Power BI and build the report in Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). These steps are outlined in **Exercise 4**.
+Some students may not be able to download the application at all because of permission restrictions on their machine. In those instances, the .pbix file that students create is included. Students can load that into Power BI and build the report in Power BI service ([https://app.powerbi.com](https://app.powerbi.com)). These steps are outlined in **Exercise 5**.
 
 ### Lab 07 Model-driven app
 

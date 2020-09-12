@@ -11,24 +11,20 @@ In this module you will design and build a canvas app for the company employees 
 ## What you will learn
 
   - Import and use a pre-built component library
-
   - Create a Power Apps canvas app
-
   - Connect to a data source
-
   - Filter data
-
   - Create data records
-
   - Use images with data records
+  - Embed canvas Power App into Microsoft Teams
 
 ## High-level lab steps
 
-  - Exercise 1 – Import company components
-
-  - Exercise 2 – Create app and layout main screen (including list of my items)
-
-  - Exercise 3 – Submit New Report
+  - Import company components
+  - Create app and layout main screen (including list of my items)
+  - Submit New Report
+  - Test
+  - Embed canvas app in Microsoft Teams
 
 ## Prerequisites
 
@@ -392,3 +388,62 @@ In this exercise, you will test the canvas application you created by submitting
 ![Record list after deletion - screenshot](03/media/image36.png)
 
 11. Close the application.
+
+### Exercise 6: Embed canvas app in Microsoft Teams
+
+In this exercise, you will add the Company 311 Phone App that you created earlier, to Microsoft Teams as a way for staff to be able to log issues directly within Teams.
+
+#### Task 1: Setup Company 311 Team
+
+In this task you will setup a Microsoft Teams team for the Lamna Healthcare Company, if you have not done so previously.
+
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the same credentials you have been using previously.
+
+2.  Select **Use the web app instead** on the welcome screen.
+
+![Teams Screen](03/media/image-3-teams.png)
+
+3.  When the Microsoft Teams window opens, dismiss the welcome messages.
+
+4.  On the bottom left corner, choose **Join or create a team**.
+
+5.  Select **Create a team**.
+
+![Create Team](03/media/image-3-createteam.png)
+
+6.  Press **Build a team from scratch**.
+
+7.  Select **Public**.
+
+8.  For the Team name choose **Company 311** and select **Create**.
+
+9.  Select **Skip** adding members to Company 311.
+
+
+#### Task 2: Add canvas app to Teams
+
+1.  Navigate to [Microsoft Teams](https://teams.microsoft.com)
+
+2.  Select the **General** channel of the **Company 311** team.
+
+3.  On the top of the page, press the **+** symbol to add a new tab.
+
+![Add Tab in Teams](03/media/image-3-addpowerbitab.png)
+
+4.  Search for **power** and select **PowerApps** from the results.
+
+5.  Press **Add** to add Power Apps to Teams
+
+![Add Power Apps in Teams](03/media/image-3-powerappsteams.png)
+
+6. Select the **Company 311 Phone App** that you created earlier in this lab. 
+
+> [!IMPORTANT]
+> If you do not see the app you need to go back to the app editor and publish the app
+
+7. Press **Save**
+
+8. The **Company 311** app should now appear on a tab in Microsoft Teams.
+
+![Add Power Apps in Teams](03/media/image-3-powerappinteams.png)
+
