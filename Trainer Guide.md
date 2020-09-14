@@ -52,7 +52,7 @@ Below you will find a general agenda outline that you can use while delivering. 
 </tr>
 <tr class="odd">
 <td>9:00 – 9:30</td>
-<td>M02 – Getting Started with the Power Platform</td>
+<td>M021 – Getting Started with the Power Platform</td>
 </tr>
 <tr class="even">
 <td>9:30 – 9:45  </td>
@@ -60,7 +60,7 @@ Below you will find a general agenda outline that you can use while delivering. 
 </tr>
 <tr class="odd">
 <td>9:45 – 10:45</td>
-<td>M03 – Data Model &amp; Model Driven Application 
+<td>M02 – Data Model &amp; Model Driven Application 
 <ul>
 <li>
 Intro the Common Data Service 
@@ -85,7 +85,7 @@ Practice Exercises
 </tr>
 <tr class="odd">
 <td>11:00 – 12:00</td>
-<td>M03 – Data Model &amp; Model Driven Application (Cont)
+<td>M02 – Data Model &amp; Model Driven Application (Cont)
 <ul>
 <li>
 Intro to Solutions
@@ -107,7 +107,7 @@ Practice Exercises
 </tr>
 <tr class="odd">
 <td>1:00 – 2:00</td>
-<td>M03 – Data Model &amp; Model Driven Application (Cont.)
+<td>M02 – Data Model &amp; Model Driven Application (Cont.)
 <ul>
 <li>
 Relationships
@@ -129,7 +129,7 @@ Practice Exercises
 </tr>
 <tr class="odd">
 <td>2:15 – 3:30 </td>
-<td>M04 – Canvas Apps 
+<td>M03 – Canvas Apps 
 <ul>
 <li>
 Building Power Apps 
@@ -151,7 +151,7 @@ Practice Exercises 
 </tr>
 <tr class="odd">
 <td>3:45 – 4:30 </td>
-<td>M04 – Canvas App UI 
+<td>M03 – Canvas App UI 
 <ul>
 <li>
 Building a UI elements
@@ -177,7 +177,7 @@ Practice Exercises
 </tr>
 <tr class="even">
 <td>8:00 – 10:00 </td>
-<td>M05 – Automate Business Processes 
+<td>M04 – Automate Business Processes 
 <ul>
 <li>
 Get Started with power Automate 
@@ -196,7 +196,7 @@ Building Flows Practice Exercises 
 </tr>
 <tr class="even">
 <td>10:15 – 12:00</td>
-<td>M05 – Automate Business Processes 
+<td>M04 – Automate Business Processes 
 <ul>
 <li>
 Working with Power Automate Admin Center
@@ -216,7 +216,7 @@ Power Automate Security and Governance 
 </tr>
 <tr class="even">
 <td>1:00 – 2:00 </td>
-<td>M06 – Create and Use Analytics 
+<td>M05 – Create and Use Analytics 
 <ul>
 <li>
 Getting Started with Power BI 
