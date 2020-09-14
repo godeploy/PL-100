@@ -52,7 +52,7 @@ Below you will find a general agenda outline that you can use while delivering. 
 </tr>
 <tr class="odd">
 <td>9:00 – 9:30</td>
-<td>M021 – Getting Started with the Power Platform</td>
+<td>M01 – Getting Started with the Power Platform</td>
 </tr>
 <tr class="even">
 <td>9:30 – 9:45  </td>
