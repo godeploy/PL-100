@@ -4,6 +4,14 @@ lab:
     module: 'Module 4: Building canvas apps'
 ---
 
+> [!NOTE]
+> Effective November 2020:
+> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
+> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
+>
+> This content will be updated soon to reflect the latest terminology.
+
+
 # Lab 03: Canvas app
 
 In this module you will design and build a canvas app for the company employees to submit problem reports.

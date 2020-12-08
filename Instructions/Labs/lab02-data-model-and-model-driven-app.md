@@ -4,6 +4,14 @@ lab:
     module: 'Module 3: Building model-driven apps'
 ---
 
+> [!NOTE]
+> Effective November 2020:
+> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
+> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
+>
+> This content will be updated soon to reflect the latest terminology.
+
+
 # Lab 02: Data model and model-driven app
 
 In this lab you will be implementing the data model for the solution and building a model-driven app that will be used by anyone fixing problems or managing the overall effort.
