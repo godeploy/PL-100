@@ -27,8 +27,8 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
 We will follow the below steps to design and create the Power BI dashboard:
 
--   Connect to Common Data Service 
--   Transform the data to include user-friendly descriptions for the related records (lookups)
+-   Connect to Microsoft Dataverse 
+-   Transform the data to include user-friendly descriptions for the related Rows (lookups)
 -    Create and publish a report with various visualizations of the information about problem reports
 -    User natural language query to build additional visualizations
 -    Build mobile view
@@ -50,7 +50,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ### Exercise 1: Prepare environment & data  
 
-**Objective:** In this exercise, you will install and configure Power BI Desktop and configure a connection to Common Data Service. 
+**Objective:** In this exercise, you will install and configure Power BI Desktop and configure a connection to Microsoft Dataverse. 
 
 > [!IMPORTANT]
 > If you do not have required permissions to install desktop applications or experience difficulties in configuring Power BI Desktop and connecting it to the data, follow **Exercise 5: Import sample data** and then continue on **Exercise 2** but using Power BI service instead of Power BI Desktop.
@@ -79,7 +79,7 @@ We will follow the below steps to design and create the Power BI dashboard:
     * In the left navigation page, select Environments, and then click on the target environment.
     * Right mouse click **Environment URL** on the **Details** panel, then select **Copy link**.
 
-![Copy CDS environment URL](06/media/image-6-1.png)
+![Copy Microsoft Dataverse environment URL](06/media/image-6-1.png)
 
 2. Switch to Power BI desktop
 
@@ -87,19 +87,19 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ![Get data command in Power BI Desktop](06/media/image-6-3.png)
 
-4. Select **Power Platform**, then select **Common Data Service**, and press **Connect**.
+4. Select **Power Platform**, then select **Microsoft Dataverse**, and press **Connect**.
 
-![Connect to Power Platform > Common Data Service data source](06/media/image-6-4.png)
+![Connect to Power Platform > Microsoft Dataverse data source](06/media/image-6-4.png)
 
 5. Paste the environment URL you copied earlier, press **OK**.
 
-![Connection details for CDS](06/media/image-6-5.png)
+![Connection details for Microsoft Dataverse](06/media/image-6-5.png)
 
 6. The connection details dialog will open up. If you are not signed in, press **Sign in** and follow the prompts to sign in. Press **Connect**. 
 
-![Signing into CDS](06/media/image-6-6.png)
+![Signing into Microsoft Dataverse](06/media/image-6-6.png)
 
-7. Expand **Entities** node, select **lh_Building**, **lh_Department**, **lh_ProblemReport** entities, press **Load**. Wait until the load is complete.
+7. Expand **Tables** node, select **lh_Building**, **lh_Department**, **lh_ProblemReport** Tables, press **Load**. Wait until the load is complete.
 
 ![img](06/media/image-6-7.png)
 
@@ -107,9 +107,9 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ![image-20200813002727982](06/media/image-6-8.png)
 
-9. Drag **lh_buildingid** column from **lh_Building** table and drop it to **lh_building** column in **lh_ProblemReport** table. That will create a relationship between two entities that Power BI will be able to use to display related data.
+9. Drag **lh_buildingid** column from **lh_Building** table and drop it to **lh_building** column in **lh_ProblemReport** table. That will create a relationship between two Tables that Power BI will be able to use to display related data.
 
-![Connect two related entities](06/media/image-6-9.png)
+![Connect two related Tables](06/media/image-6-9.png)
 
 10. Repeat the previous step to drag **lh_departmentid** column and drop it into **lh_department** column in **lh_ProblemReport**. Your diagram should look like this:
 
@@ -119,7 +119,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 ![Report icon on the toolbar](06/media/image-6-11.png)
 
-12. Expand **lh_ProblemReports** node in the **Fields** panel.
+12. Expand **lh_ProblemReports** node in the **Columns** panel.
 
 13. Click ... and select **New Column**.
 
@@ -147,7 +147,7 @@ Department = RELATED(lh_Department[lh_name])
 
 ### Exercise 2: Create Power BI Report 
 
-**Objective:** In this exercise, you will create a Power BI report based on data from Common Data Service database.
+**Objective:** In this exercise, you will create a Power BI report based on data from Microsoft Dataverse database.
 
 #### Task 1: Create Chart and Time Visualizations
 
@@ -155,8 +155,8 @@ Department = RELATED(lh_Department[lh_name])
 
 ![Select pie chart visualization](06/media/image-6-14.png)
 
-2. Drag **Building** field and drop it into **Legend** target box.
-3. Drag **Problem Reports** field and drop it into **Values** target box.
+2. Drag **Building** Column and drop it into **Legend** target box.
+3. Drag **Problem Reports** Column and drop it into **Values** target box.
 
 ![Complete visualization properties by selecting columns as legend and values](06/media/image-6-15.png)
 
@@ -168,8 +168,8 @@ Department = RELATED(lh_Department[lh_name])
 
 ![Stacked column chart](06/media/image-6-17.png)
 
-6. Drag **Problem Report** field and drop it into **Values** target box.
-7. Drag **createdon** field and drop it into **Axis** target box.
+6. Drag **Problem Report** Column and drop it into **Values** target box.
+7. Drag **createdon** Column and drop it into **Axis** target box.
 8. Click **x** next to **Day** and **Quarter** to leave only **Year** and **Month** totals.
 
 > [!TIP]

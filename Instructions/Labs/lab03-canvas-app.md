@@ -22,8 +22,8 @@ In this module you will design and build a canvas app for the company employees 
   - Create a Power Apps canvas app
   - Connect to a data source
   - Filter data
-  - Create data records
-  - Use images with data records
+  - Create data Rows
+  - Use images with data Rows
   - Embed canvas Power App into Microsoft Teams
 
 ## High-level lab steps
@@ -42,7 +42,7 @@ In this module you will design and build a canvas app for the company employees 
 
 ### Exercise 1: Create canvas application
 
-In this exercise, you will import a solution with shared components, create a view for the problem report entity, and create a canvas application.
+In this exercise, you will import a solution with shared components, create a view for the problem report Table, and create a canvas application.
 
 #### Task 1: Import component library solution
 
@@ -96,7 +96,7 @@ In this task, you will create a view that will show the current user’s problem
 
 2.  Select **Solutions** and click to open the **Company 311** solution.
 
-3.  Locate and click to open the **Problem Reports** entity.
+3.  Locate and click to open the **Problem Reports** Table.
 
 4.  Select the **Views** tab and click to open the **Active Problem Reports** view.
 
@@ -241,19 +241,19 @@ In this exercise, you will add a gallery that will show reports created by the c
 
 ![Gallery positioning - screenshot](03/media/image20.png)
 
-4.  Select **My Reports Gallery**, go to the **Properties** pane, and select **Problem Reports** for **Data Source**. If you do not see Problem Reports, click See all entities.
+4.  Select **My Reports Gallery**, go to the **Properties** pane, and select **Problem Reports** for **Data Source**. If you do not see Problem Reports, click See all Tables.
 
 ![Gallery data source - screenshot](03/media/image21.png)
 
 5.  Select the **My Reports** view you created for **View**.
 
-6.  Click **Edit Fields**.
+6.  Click **Edit Columns**.
 
-![Edit gallery fields - screenshot](03/media/image22.png)
+![Edit gallery Columns - screenshot](03/media/image22.png)
 
-7.  Change Subtitle1 to **statuscode**. This is the Status Reason field.
+7.  Change Subtitle1 to **statuscode**. This is the Status Reason Column.
 
-![Edit field - screenshot ](03/media/image23.png)
+![Edit Column - screenshot ](03/media/image23.png)
 
 8.  Click File and then click Save.
 
@@ -305,23 +305,23 @@ In this exercise, you will add a form to submit new problem reports.
 
 3.  Select **New Report Form**, go to the **Properties** pane, and select **Problem Report** for **Data source**.
 
-4.  Click **Edit fields**.
+4.  Click **Edit Columns**.
 
-![Edit form fields - screenshot](03/media/image28.png)
+![Edit form Columns - screenshot](03/media/image28.png)
 
-5.  Remove the **Status Reason** field.
+5.  Remove the **Status Reason** Column.
 
-![Remove fields from form - screenshot](03/media/image29.png)
+![Remove Columns from form - screenshot](03/media/image29.png)
 
-6.  Remove the **Created On** field.
+6.  Remove the **Created On** Column.
 
-7.  Remove the **Location** field.
+7.  Remove the **Location** Column.
 
-8.  Click **+ Add field**.
+8.  Click **+ Add Column**.
 
 9.  Select **Details**, **Building**, **Department**, and **Photo**, and then click **Add**.
 
-![Add fields to form - screenshot](03/media/image30.png)
+![Add Columns to form - screenshot](03/media/image30.png)
 
 10. Resize and reposition the form so it takes most of the page and leave enough room for a button in the bottom.
 
@@ -337,15 +337,15 @@ In this exercise, you will add a form to submit new problem reports.
 
 15. Change the **Submit Report** button text to **Submit**
 
-16. Select the Submit Report button and change the **OnSelect** value to the formula below. This formula will create a new record and clear the form when the button is clicked.
+16. Select the Submit Report button and change the **OnSelect** value to the formula below. This formula will create a new Row and clear the form when the button is clicked.
 
 `SubmitForm('New Report Form'); NewForm('New Report Form')`
 
 17. Select the **New Report Form**.
 
-18. Change the **OnSuccess** value to the formula below. This formula will show a notification after the new record gets created.
+18. Change the **OnSuccess** value to the formula below. This formula will show a notification after the new Row gets created.
 
-`Notify("Created new problem report record")`
+`Notify("Created new problem report Row")`
 
 19. Select the **New Report Screen**.
 
@@ -375,25 +375,25 @@ In this exercise, you will test the canvas application you created by submitting
 
 3.  Select the **New Report** tab.
 
-4.  The **New Report Form** should load. Fill out the form and click on the **Photo** field.
+4.  The **New Report Form** should load. Fill out the form and click on the **Photo** Column.
 
 5.  Select an image.
 
 6.  Click **Submit**
 
-7.  The record should get created successfully and you should see the success message.
+7.  The Row should get created successfully and you should see the success message.
 
-![Save record message - screenshot](03/media/image34.png)
+![Save Row message - screenshot](03/media/image34.png)
 
 8.  Select the **My Reports** tab.
 
 9.  You should see the new report you created. Click **Delete** to test the delete.
 
-![Delete record - screenshot](03/media/image35.png)
+![Delete Row - screenshot](03/media/image35.png)
 
-10. The record should be deleted and removed from the list.
+10. The Row should be deleted and removed from the list.
 
-![Record list after deletion - screenshot](03/media/image36.png)
+![Row list after deletion - screenshot](03/media/image36.png)
 
 11. Close the application.
 

@@ -44,25 +44,25 @@ In this lab you will enhance the data model and improve the app behavior by addi
 
 ### Exercise 1: Create business process flow
 
-In this exercise, you will create a business process flow for the problem report entity.
+In this exercise, you will create a business process flow for the problem report Table.
 
-#### Task 1: Customize entity
+#### Task 1: Customize Table
 
-In this task, you will add a lookup field to the problem report entity.
+In this task, you will add a lookup Column to the problem report Table.
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.
 
 2.  Select **Solutions** and click to open the **Company 311** solution.
 
-3.  Locate and click to open the **Problem Report** entity.
+3.  Locate and click to open the **Problem Report** Table.
 
-4.  Make sure you have the **Fields** tab and click **+ Add field**.
+4.  Make sure you have the **Columns** tab and click **+ Add Column**.
 
 5.  Enter **Assign to** for **Display name**, select **Lookup** for **Data type**, select **User** for **Related table**, and click **Done**.
 
-![Field properties - screenshot](04/media//image1.png)
+![Column properties - screenshot](04/media//image1.png)
 
-6.  Click **Save entity**.
+6.  Click **Save Table**.
 
 7.  Go back to the solution by clicking on the solution name.
 
@@ -72,7 +72,7 @@ In this task, you will add a lookup field to the problem report entity.
 
 #### Task 2: Create business process flow
 
-In this task, you will create a business process flow for the problem report entity.
+In this task, you will create a business process flow for the problem report Table.
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.
 
@@ -82,7 +82,7 @@ In this task, you will create a business process flow for the problem report ent
 
 ![New business process flow - screenshot](04/media//image3.png)
 
-4.  Enter **Problem resolution process** for **Name**, select **Problem Report** for **Entity**, and click **Create**.
+4.  Enter **Problem resolution process** for **Name**, select **Problem Report** for **Table**, and click **Create**.
 
 5.  Select the **New stage**, go to the **Properties** pane, change the **Display Name** to **Route**, and click **Apply**.
 
@@ -92,7 +92,7 @@ In this task, you will create a business process flow for the problem report ent
 
 ![Expand stage details - screenshot](04/media//image5.png)
 
-7.  Select **Data Step \#1**, go to the **Properties** pane, select **Building** for **Data Field**, and click **Apply**.
+7.  Select **Data Step \#1**, go to the **Properties** pane, select **Building** for **Data Column**, and click **Apply**.
 
 ![Step properties - screenshot](04/media//image6.png)
 
@@ -102,13 +102,13 @@ In this task, you will create a business process flow for the problem report ent
 
 9.  Add the data step below the **Building** data step.
 
-10. Select the new data step, go to the **Properties** pane, select **Location** for **Data Field**, and click **Apply**.
+10. Select the new data step, go to the **Properties** pane, select **Location** for **Data Column**, and click **Apply**.
 
 11. Click **+ Add** again and select **Add Data Step**.
 
 12. Add the new data step below the **Location** data step.
 
-13. Select the new data step, go to the **Properties** pane, select **Department** for **Data Field**, and click **Apply**.
+13. Select the new data step, go to the **Properties** pane, select **Department** for **Data Column**, and click **Apply**.
 
 14. The **Route** stage should now look like the image below.
 
@@ -124,7 +124,7 @@ In this task, you will create a business process flow for the problem report ent
 
 19. Select **Data Step \#1** of the **Fix** stage.
 
-20. Go to the **Properties** pane, select **Assign to** for **Data Field**, and click **Apply**.
+20. Go to the **Properties** pane, select **Assign to** for **Data Column**, and click **Apply**.
 
 21. Click **+ Add** and select **Add Stage**.
 
@@ -136,13 +136,13 @@ In this task, you will create a business process flow for the problem report ent
 
 25. Select **Data Step \#1** of the **Resolve** stage.
 
-26. Go to the **Properties** pane, select **Resolution** for **Data Field**, and click **Apply**.
+26. Go to the **Properties** pane, select **Resolution** for **Data Column**, and click **Apply**.
 
 27. Click **+ Add** and select **Add Data Step**.
 
 28. Add the new data step below the **Resolution** data step.
 
-29. Select the new data step, go to the **Properties** pane, select **Resolved on** for **Date Field**, and click **Apply**.
+29. Select the new data step, go to the **Properties** pane, select **Resolved on** for **Date Column**, and click **Apply**.
 
 30. The Business process flow should now look like the image below. Click **Save**.
 
@@ -182,13 +182,13 @@ In this exercise, you will create a business rule that will block completion of 
 
 2.  Select **Solutions** and click to open the **Company 311** solution.
 
-3.  Locate and click to open the **Problem Report** entity.
+3.  Locate and click to open the **Problem Report** Table.
 
 4.  Select the **Business rules** tab and click **Add business rule**.
 
 ![Add business rule - screenshot ](04/media//image12.png)
 
-5.  Make sure the **Scope** is set to **Entity** and click **Show details**.
+5.  Make sure the **Scope** is set to **Table** and click **Show details**.
 
 ![Expand details - screenshot](04/media//image13.png)
 
@@ -198,7 +198,7 @@ In this exercise, you will create a business rule that will block completion of 
 
 8.  Go to the **Properties** pane and change the **Display name** to **Resolution required**.
 
-9.  Scroll down to **Rule 1**, select **Status Reason** for **Field**, select **Equals** for **Operator**, select **Value** for **Type**, select **Completed** for **Value**, and click **Apply**.
+9.  Scroll down to **Rule 1**, select **Status Reason** for **Column**, select **Equals** for **Operator**, select **Value** for **Type**, select **Completed** for **Value**, and click **Apply**.
 
 ![Rule properties - screenshot](04/media//image14.png)
 
@@ -206,7 +206,7 @@ In this exercise, you will create a business rule that will block completion of 
 
 ![Add new rule - screenshot](04/media//image15.png)
 
-11. Scroll down to **Rule 2**, select **Resolution** for **Field**, select **Does not contain data** for **Operator**, make sure **And** is selected for **Rule Logic**, and click **Apply**.
+11. Scroll down to **Rule 2**, select **Resolution** for **Column**, select **Does not contain data** for **Operator**, make sure **And** is selected for **Rule Logic**, and click **Apply**.
 
 ![Rule properties - screenshot](04/media//image16.png)
 
@@ -220,7 +220,7 @@ In this exercise, you will create a business rule that will block completion of 
 
 ![Add action after condition - screenshot](04/media//image18.png)
 
-15. Select the new action, go to the **Properties** pane, enter **Show message** for **Display Name**, select **Status Reason** for **Field**, enter **The Problem must have a resolution before it can be closed** for **Message**, and click **Apply**.
+15. Select the new action, go to the **Properties** pane, enter **Show message** for **Display Name**, select **Status Reason** for **Column**, enter **The Problem must have a resolution before it can be closed** for **Message**, and click **Apply**.
 
 ![Show error message action properties - screenshot](04/media//image19.png)
 
@@ -274,4 +274,4 @@ In this exercise, you will test the business process flow and the business rule 
 
 ![Form without error message - screenshot](04/media//image26.png)
 
-11. Save the record.
+11. Save the Row.

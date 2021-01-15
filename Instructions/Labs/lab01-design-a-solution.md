@@ -22,7 +22,7 @@ In this lab you will be shaping your idea into something that can be implemen
 
   - How to map a problem domain to the Power Platform 
 
-  - How to determine required entities for a data model 
+  - How to determine required Tables for a data model 
 
 ## High-level lab steps
 
@@ -146,19 +146,19 @@ In this exercise, you will create the data model to support the apps you will be
 
 #### Task 1: Evaluate what you know already about the data
 
-In this task, you will be evaluating the information you already collected about your proposed solution and trying to identify what data entities are needed and how they are related. If you want, you can do this task concurrently with the next task where you draw the data model.
+In this task, you will be evaluating the information you already collected about your proposed solution and trying to identify what data Tables are needed and how they are related. If you want, you can do this task concurrently with the next task where you draw the data model.
 
-1.  Identify the main data that will be managed by the solution. This will typically become one or two entities and will be the focus of the app you build. Other data is typically related to and supports these entities.
+1.  Identify the main data that will be managed by the solution. This will typically become one or two Tables and will be the focus of the app you build. Other data is typically related to and supports these Tables.
 
-2.  Identify related entities needed to support your scenario.
+2.  Identify related Tables needed to support your scenario.
 
-3.  Identify how entities should be connected using relationships.
+3.  Identify how Tables should be connected using relationships.
 
-4.  Evaluate what should be fields and what should be entities. For example, how should the photo be stored or the location within the building?
+4.  Evaluate what should be Columns and what should be Tables. For example, how should the photo be stored or the location within the building?
 
 #### Task 2: Draw a draft data model
 
-Use whatever tools you have available; you can use a whiteboard, Visio, PowerPoint, OneNote, or you can even use it piece of paper and pen. The goal here is not to be picture perfect but to allow you to think through what the data model should look like and possibly share with others and get their ideas. This data model typically will be your guide when you are creating the entities in the maker portal. Well you could of course just start creating the entities in the portal by creating a diagram helps ensure it's a little bit more well thought out.
+Use whatever tools you have available; you can use a whiteboard, Visio, PowerPoint, OneNote, or you can even use it piece of paper and pen. The goal here is not to be picture perfect but to allow you to think through what the data model should look like and possibly share with others and get their ideas. This data model typically will be your guide when you are creating the Tables in the maker portal. Well you could of course just start creating the Tables in the portal by creating a diagram helps ensure it's a little bit more well thought out.
 
 1.  Draw your data model, including relationships and any relationship behaviors. Your drawing should look like the following example, except yours should be for your Company 311 solution.
     

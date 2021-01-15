@@ -18,15 +18,15 @@ In this lab you will be implementing the data model for the solution and buildi
 
 ## What you will learn
 
-  - Create entities, fields, and relationships
+  - Create Tables, Columns, and relationships
 
   - Create model-driven app
 
   - Create a site map
 
-  - Create and configure entity forms
+  - Create and configure Table forms
 
-  - Create and configure entity views
+  - Create and configure Table views
 
 ## High-level lab steps
 
@@ -84,41 +84,41 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
 ### Exercise 2: Implement data model
 
-In this exercise, you will create entities, fields, and the relationships you identified when you designed the data model for the Company 311 app.
+In this exercise, you will create Tables, Columns, and the relationships you identified when you designed the data model for the Company 311 app.
 
-#### Task 1: Create entities
+#### Task 1: Create Tables
 
 1.  In the [Power Apps maker portal](https://make.powerapps.com/) select **Solutions** and click to open the **Company 311** solution you created in Exercise 1.
 
-2.  Click **+ New** and select **Entity**.
+2.  Click **+ New** and select **Table**.
 
 3.  Enter **Building** for **Display name** and click **Done**.
 
-![Building entity properties - screenshot](02/media/image5.png)
+![Building Table properties - screenshot](02/media/image5.png)
 
 4.  Go back to the solution by clicking on the solution name.
 
 ![Back to solution - screenshot](02/media/image6.png)
 
-5.  Click **+ New** and select **Entity** again.
+5.  Click **+ New** and select **Table** again.
 
 6.  Enter **Department** for **Display name** and click **Done**.
 
-![Department entity properties - screenshot](02/media/image7.png)
+![Department Table properties - screenshot](02/media/image7.png)
 
 7.  Go back to the solution by clicking on the solution name.
 
-8.  Click **+ New** and select **Entity** one more time.
+8.  Click **+ New** and select **Table** one more time.
 
-9.  Enter **Problem Report** for **Display name**, change the **Primary field** **Display name** to **Title**, and click **More settings**.
+9.  Enter **Problem Report** for **Display name**, change the **Primary Column** **Display name** to **Title**, and click **More settings**.
 
-![Problem report entity properties - screenshot](02/media/image8.png)
+![Problem report Table properties - screenshot](02/media/image8.png)
 
 10. Click to expand the **Collaboration** section.
 
 ![Expand section - screenshot](02/media/image9.png)
 
-11. Check the **Enable queues** checkbox and click **Done**. Enabling queues allows Problem Report records to be associated with one or more queues to help facilitate routing to the different departments.
+11. Check the **Enable queues** checkbox and click **Done**. Enabling queues allows Problem Report Rows to be associated with one or more queues to help facilitate routing to the different departments.
 
 ![Enable queues - screenshot](02/media/image10.png)
 
@@ -126,55 +126,55 @@ In this exercise, you will create entities, fields, and the relationships you id
 
 ![Confirm changes - screenshot](02/media/image11.png)
 
-#### Task 2: Add fields
+#### Task 2: Add Columns
 
-In this task, you will add fields to the Problem Report entity.
+In this task, you will add Columns to the Problem Report Table.
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.
 
 2.  Select **Solutions** and click to open the **Company 311** solution you created in exercise 1.
 
-3.  Locate and click to open the **Problem Report** entity.
+3.  Locate and click to open the **Problem Report** Table.
 
-![Open entity - screenshot](02/media/image12.png)
+![Open Table - screenshot](02/media/image12.png)
 
-4.  Select the **Fields** tab and click **+ Add field**.
+4.  Select the **Columns** tab and click **+ Add Column**.
 
-![Add new field - screenshot](02/media/image13.png)
+![Add new Column - screenshot](02/media/image13.png)
 
 5.  Enter **Location** for **Display name**, select **Text** for **Data type**, and click **Advanced options**.
 
-![Field advanced options - screenshot](02/media/image14.png)
+![Column advanced options - screenshot](02/media/image14.png)
 
 6.  Change **Max length** to **150** and click **Done**.
 
-![Text field max length - screenshot](02/media/image15.png)
+![Text Column max length - screenshot](02/media/image15.png)
 
-7.  Click **+ Add field** again.
+7.  Click **+ Add Column** again.
 
-8.  Enter **Details** for **Display name**, select **Multiline text** for **Data type**, make the field **Required**, and click **Done**.
+8.  Enter **Details** for **Display name**, select **Multiline text** for **Data type**, make the Column **Required**, and click **Done**.
 
-![Details field properties - screenshot](02/media/image16.png)
+![Details Column properties - screenshot](02/media/image16.png)
 
-9.  Click **+ Add field** again.
+9.  Click **+ Add Column** again.
 
 10. Enter **Photo** for **Display name**, select **Image** for **Data type**, and click **Done**.
 
-11. Click **+ Add field**.
+11. Click **+ Add Column**.
 
 12. Enter **Resolution** for **Display name**, select **Multiline text** for **Data type**, and click **Done**.
 
-13. Click **+ Add field**.
+13. Click **+ Add Column**.
 
 14. Enter **Resolved On** for **Display name**, select **Date and time** for **Data type**, and click **Done**.
 
 15. Click Filter and select Custom
 
-![Filter fields - screenshot](02/media/image17.png)
+![Filter Columns - screenshot](02/media/image17.png)
 
-16. You should now see the 5 new fields you created. Click **Save entity**.
+16. You should now see the 5 new Columns you created. Click **Save Table**.
 
-![Save entity - screenshot](02/media/image18.png)
+![Save Table - screenshot](02/media/image18.png)
 
 17. Go back to the solution by clicking on the solution name.
 
@@ -182,13 +182,13 @@ In this task, you will add fields to the Problem Report entity.
 
 19. Do not navigate away from this page.
 
-#### Task 3: Edit status reason option set
+#### Task 3: Edit status reason Choice
 
-In this task, you will edit the status reason field of the problem report entity.
+In this task, you will edit the status reason Column of the problem report Table.
 
 1.  Make sure you are in the **Company 311** solution.
 
-2.  Click to open the **Problem Report** entity.
+2.  Click to open the **Problem Report** Table.
 
 3.  Click on the **… More commands** button and select **Switch to classic**.
 
@@ -197,9 +197,9 @@ In this task, you will edit the status reason field of the problem report entity
 
 ![Switch to classic - screenshot](02/media/image19.png)
 
-4.  Select **Fields** and double click to open the **Status Reason** field.
+4.  Select **Columns** and double click to open the **Status Reason** Column.
 
-![Open field - screenshot](02/media/image20.png)
+![Open Column - screenshot](02/media/image20.png)
 
 5.  Make sure **Active** is selected for **Status** and double click to open the **Active** option.
 
@@ -231,7 +231,7 @@ In this task, you will edit the status reason field of the problem report entity
 
 15. You should now have 5 options. Select **New** for **Default Value** and click **Save and Close**.
 
-![Save and close field - screenshot](02/media/image25.png)
+![Save and close Column - screenshot](02/media/image25.png)
 
 16. Click **Publish** and wait for the publishing to complete.
 
@@ -245,9 +245,9 @@ In this task, you will edit the status reason field of the problem report entity
 
 #### Task 4: Relationships
 
-In this task, you will create many to one relationships between the problem report entity and the building and department entities.
+In this task, you will create many to one relationships between the problem report Table and the building and department Tables.
 
-1.  Make sure you are in the **Problem Report** entity.
+1.  Make sure you are in the **Problem Report** Table.
 
 2.  Select the **Relationships** tab and click **+ Add relationship**.
 
@@ -257,7 +257,7 @@ In this task, you will create many to one relationships between the problem repo
 
 ![Many-to-one relationship - screenshot](02/media/image28.png)
 
-4.  Select **Building** for **Related (One) Entity** and click **Done**.
+4.  Select **Building** for **Related (One) Table** and click **Done**.
 
 ![Relationship properties - screenshot](02/media/image29.png)
 
@@ -265,9 +265,9 @@ In this task, you will create many to one relationships between the problem repo
 
 6.  Select **Many-to-one**.
 
-7.  Select **Department** for **Related (One) Entity** and click **Done**.
+7.  Select **Department** for **Related (One) Table** and click **Done**.
 
-8.  Click **Save entity**.
+8.  Click **Save Table**.
 
 9.  Go back to the solution by clicking on the solution name.
 
@@ -275,7 +275,7 @@ In this task, you will create many to one relationships between the problem repo
 
 ### Exercise 3: Configure form and views
 
-In this exercise, you will configure form and views for the problem report entity.
+In this exercise, you will configure form and views for the problem report Table.
 
 #### Task 1: Configure form
 
@@ -283,7 +283,7 @@ In this exercise, you will configure form and views for the problem report entit
 
 2.  Select Solutions and click to open the **Company 311** solution.
 
-3.  Locate and click to open the **Problem Report** entity.
+3.  Locate and click to open the **Problem Report** Table.
 
 4.  Select the **Forms** tab and click to open the **Main** form.
 
@@ -297,23 +297,23 @@ In this exercise, you will configure form and views for the problem report entit
 
 ![Section properties - screenshot](02/media/image32.png)
 
-7.  While you still have the section selected, go to the **Fields** pane, and click on the **Building** field. The Building field will be added to the form.
+7.  While you still have the section selected, go to the **Columns** pane, and click on the **Building** Column. The Building Column will be added to the form.
 
-![Add field to form - screenshot](02/media/image33.png)
+![Add Column to form - screenshot](02/media/image33.png)
 
-8.  Add the **Details**, and **Photo** fields to the form.
+8.  Add the **Details**, and **Photo** Columns to the form.
 
-9.  Your form should now look like the image below. Select the **Details** field.
+9.  Your form should now look like the image below. Select the **Details** Column.
 
-![Select field - screenshot](02/media/image34.png)
+![Select Column - screenshot](02/media/image34.png)
 
 10. Go to the **Properties** pane and click to expand the **Formatting** section.
 
-![Field formatting - screenshot](02/media/image35.png)
+![Column formatting - screenshot](02/media/image35.png)
 
-11. Change the **Field height** to **4**.
+11. Change the **Column height** to **4**.
 
-![Change field height - screenshot](02/media/image36.png)
+![Change Column height - screenshot](02/media/image36.png)
 
 12. Select the **Components** from the toolbar.
 
@@ -331,17 +331,17 @@ In this exercise, you will configure form and views for the problem report entit
 
 ![Rename section - screenshot](02/media/image40.png)
 
-16. Select **Fields** from the toolbar.
+16. Select **Columns** from the toolbar.
 
-17. Add **Department**, **Status Reason**, **Resolved on**, and **Resolution** fields to the **Resolution details** section.
+17. Add **Department**, **Status Reason**, **Resolved on**, and **Resolution** Columns to the **Resolution details** section.
 
-![Add fields to section - screenshot](02/media/image41.png)
+![Add Columns to section - screenshot](02/media/image41.png)
 
-18. Select the **Resolution** field.
+18. Select the **Resolution** Column.
 
 19. Go to the **Properties** pane and click to expand the **Formatting** section.
 
-20. Change the **Field height** to **4**.
+20. Change the **Column height** to **4**.
 
 21. You form should now look like the image below. Click **Save**.
 
@@ -353,7 +353,7 @@ In this exercise, you will configure form and views for the problem report entit
 
 ![Back to previous view -screenshot](02/media/image43.png)
 
-24. You should now be back to the entity.
+24. You should now be back to the Table.
 
 25. Do not navigate away from this page.
 
@@ -377,7 +377,7 @@ In this exercise, you will configure form and views for the problem report entit
 
 5.  Set the first filter to **Status Reason Equals New**.
 
-6.  Click on the field where you **New** selected.
+6.  Click on the Column where you **New** selected.
 
 ![Add more filters - screenshot](02/media/image48.png)
 
@@ -481,7 +481,7 @@ In this exercise, you will create model-driven application.
 
 ![Sitemap subarea - screenshot](02/media/image67.png)
 
-11. Go to the **Properties** pane, select **Entity** for **Type**, and select **Problem Report** for **Entity**.
+11. Go to the **Properties** pane, select **Table** for **Type**, and select **Problem Report** for **Table**.
 
 ![Sitemap subarea properties - screenshot](02/media/image68.png)
 
@@ -519,7 +519,7 @@ In this exercise, you will create model-driven application.
 
 22. Select the **New Subarea**.
 
-23. Go to the **Properties** pane, select **Entity** for **Type**, and select **Building** for **Entity**.
+23. Go to the **Properties** pane, select **Table** for **Type**, and select **Building** for **Table**.
 
 ![Sitemap subarea properties - screenshot](02/media/image75.png)
 
@@ -527,7 +527,7 @@ In this exercise, you will create model-driven application.
 
 25. Select the **New Subarea**.
 
-26. Go to the **Properties** pane, select **Entity** for **Type**, and select **Department** for **Entity**.
+26. Go to the **Properties** pane, select **Table** for **Type**, and select **Department** for **Table**.
 
 27. The sitemap should now look like the image below. Click **Save** to save the sitemap.
 
@@ -539,7 +539,7 @@ In this exercise, you will create model-driven application.
 
 ![Back to app designer button - screenshot](02/media/image77.png)
 
-30. The application should now have three entities. Click **Save** to save the application.
+30. The application should now have three Tables. Click **Save** to save the application.
 
 ![Save application - screenshot](02/media/image78.png)
 
@@ -571,11 +571,11 @@ In this exercise, you will input data.
 
 5.  Select **Departments** and click **+ New**.
 
-![New department record button - screenshot](02/media/image82.png)
+![New department Row button - screenshot](02/media/image82.png)
 
 6.  Enter **Facility Maintenance** for **Name** and click **Save**.
 
-![Save record - screenshot](02/media/image83.png)
+![Save Row - screenshot](02/media/image83.png)
 
 7.  Click **+ New** again.
 
@@ -587,7 +587,7 @@ In this exercise, you will input data.
 
 11. Select **Departments**.
 
-12. You should now have three department records. Select **Buildings**.
+12. You should now have three department Rows. Select **Buildings**.
 
 ![Select subarea - screenshot](02/media/image84.png)
 
@@ -599,7 +599,7 @@ In this exercise, you will input data.
 
 16. Enter **London Paddington** for **Name** and click **Save & Close**.
 
-17. You should now have two building records. Click **Change area**.
+17. You should now have two building Rows. Click **Change area**.
 
 ![Change area - screenshot](02/media/image85.png)
 
@@ -607,15 +607,15 @@ In this exercise, you will input data.
 
 19. Click **+ New**.
 
-![New record button - screenshot](02/media/image86.png)
+![New Row button - screenshot](02/media/image86.png)
 
 20. Enter **Broken door** for **Title**, select **San Francisco Main Campus** for **Building**, enter **The main entrance door will not open all the way** for **Details**, and click Save
 
-![Record form - screenshot](02/media/image87.png)
+![Row form - screenshot](02/media/image87.png)
 
-21. Click on the **Photo** field.
+21. Click on the **Photo** Column.
 
-![Click field - screenshot](02/media/image88.png)
+![Click Column - screenshot](02/media/image88.png)
 
 22. Select an image from your device.
 
@@ -623,11 +623,11 @@ In this exercise, you will input data.
 
 ![Image on a form - screenshot](02/media/image89.png)
 
-24. You may add more records.
+24. You may add more Rows.
 
 ### Exercise 6: Import data
 
-In this exercise, you will import sample data into your environment. Records are imported by a Power Automate flow that you will first import using a solution.
+In this exercise, you will import sample data into your environment. Rows are imported by a Power Automate flow that you will first import using a solution.
 
 #### Task 1: Import solution
 
@@ -667,7 +667,7 @@ In this exercise, you will import sample data into your environment. Records are
 
 6.  Click to expand the **Input** **Data** step.
 
-7.  Review the Json text in the value field. This is the data that will be imported into your environment
+7.  Review the Json text in the value Column. This is the data that will be imported into your environment
 
 8.  Expand the **Each Department** for each control
 
@@ -701,19 +701,19 @@ In this exercise, you will import sample data into your environment. Records are
 
 2.  Select **Apps** and click to open the **Company 311 Admin** application.
 
-3.  Select Problem Reports and change the view to My Reports. You should see at least three new records.
+3.  Select Problem Reports and change the view to My Reports. You should see at least three new Rows.
 
 ![Imported problem reports - screenshot](02/media/image94.png)
 
-4.  Click to open one of the **Problem Report** records.
+4.  Click to open one of the **Problem Report** Rows.
 
-5.  Click on the **Building** lookup and make sure building records were imported.
+5.  Click on the **Building** lookup and make sure building Rows were imported.
 
-![Imported building records - screenshot](02/media/image95.png)
+![Imported building Rows - screenshot](02/media/image95.png)
 
 6.  Scroll down and click on the **Department** lookup.
 
-7.  Make sure the department records got imported.
+7.  Make sure the department Rows got imported.
 
 ### **Bonus exercise**
 

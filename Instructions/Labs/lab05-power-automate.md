@@ -26,15 +26,15 @@ The following have been identified as requirements you must implement to complet
 
 ## What you will learn
 
-  - How to design data fields to support automation 
+  - How to design data Columns to support automation 
 
-  - How to build a flow using Common Data Service 
+  - How to build a flow using Microsoft Dataverse 
 
   - How to use approvals 
 
 ## High-level lab steps
 
-  - Add fields to support escalation 
+  - Add Columns to support escalation 
   - Build flow to approve escalation  
   - Build flow to notify user of status change
   - Build approval as an adaptive card in Microsoft Teams 
@@ -56,7 +56,7 @@ In this exercise, you create a flow that will notify the creator of a problem wh
 
 #### Task 1: Create flow
 
-In this task, you will create a flow that send notification when the status of problem report record changes.
+In this task, you will create a flow that send notification when the status of problem report Row changes.
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
@@ -66,13 +66,13 @@ In this task, you will create a flow that send notification when the status of p
 
 ![Create new flow - screenshot](05/media/image1.png)
 
-4.  Search for **when a record is created** and select **When a record is created, updated, or deleted** **Common Data Service (Current Environment)**
+4.  Search for **when a Row is created** and select **When a Row is created, updated, or deleted** **Microsoft Dataverse (Current Environment)**
 
 ![Select trigger - screenshot](05/media/image2.png)
 
-5.  Select **Update** for **Trigger condition**, **Problem Reports** for **Entity name**, **Organization** for **Scope**, and click **Show advanced options**.
+5.  Select **Update** for **Trigger condition**, **Problem Reports** for **Table name**, **Organization** for **Scope**, and click **Show advanced options**.
 
-6.  Enter **statuscode** for **Filtering attributes** and **… Menu** button of the trigger step.
+6.  Enter **statuscode** for **Filtering Columns** and **… Menu** button of the trigger step.
 
 ![Provide filter and click menu - screenshot](05/media/image3.png)
 
@@ -84,11 +84,11 @@ In this task, you will create a flow that send notification when the status of p
 
 ![Add new flow step - screenshot](05/media/image4.png)
 
-10. Search for **get a record** and select **Get a record Common Data Service (Current environment)**.
+10. Search for **get a Row** and select **Get a Row Microsoft Dataverse (Current environment)**.
 
-11. Select **Users** for **Entity name**.
+11. Select **Users** for **Table name**.
 
-12. Click on the **Item ID** field, go to the Dynamic pane, search for **created** and select **Created By (Value)**.
+12. Click on the **Item ID** Column, go to the Dynamic pane, search for **created** and select **Created By (Value)**.
 
 13. Click **Show advanced options** of the new step.
 
@@ -102,15 +102,15 @@ In this task, you will create a flow that send notification when the status of p
 
 18. Search for **send email** and select **Send an email (V2).**
 
-19. Click to select the **To** field and click **Switch to advanced mode**. Click on this button toggles show/hide of the dynamic pane.
+19. Click to select the **To** Column and click **Switch to advanced mode**. Click on this button toggles show/hide of the dynamic pane.
 
 ![Show the dynamic pane - screenshot](05/media/image5.png)
 
-20. Select the **Primary Email** field form the **Get problem creator** step.
+20. Select the **Primary Email** Column form the **Get problem creator** step.
 
 21. Enter **Problem report status change notification** for **Subject**.
 
-22. Click to select the **Body** field.
+22. Click to select the **Body** Column.
 
 23. Type **The status of the problem you reported has changed.** and press the **\[ENTER\]** key.
 
@@ -118,7 +118,7 @@ In this task, you will create a flow that send notification when the status of p
 
 25. Press the **\[ENTER\]** key.
 
-26. Type **Current Status:** go to the Dynamic pane, select the **Expression** tab, paste the expression below, and click OK. This expression will show the label of the option set instead of the value.
+26. Type **Current Status:** go to the Dynamic pane, select the **Expression** tab, paste the expression below, and click OK. This expression will show the label of the Choice instead of the value.
 
 `triggerOutputs()?['body/_statuscode_label']`
 
@@ -154,7 +154,7 @@ In this task, you will test the notify problem creator flow.
 
 3.  Click **+ New**.
 
-4.  Enter **Flow test** for **Title**, select **London Paddington** for **building**, enter **This is a flow test record** for **Details**, and click **Save**.
+4.  Enter **Flow test** for **Title**, select **London Paddington** for **building**, enter **This is a flow test Row** for **Details**, and click **Save**.
 
 5.  Scroll down and change the **Status Reason** value to **In Progress** and save again.
 
@@ -184,35 +184,35 @@ In this task, you will test the notify problem creator flow.
 
 ### Exercise 2: Build escalation flow
 
-In this exercise, you create add two new fields to the problem report entity and create escalation flow.
+In this exercise, you create add two new Columns to the problem report Table and create escalation flow.
 
-#### Task 1: Add fields
+#### Task 1: Add Columns
 
-In this task, you add a new fields to the problem report entity.
+In this task, you add a new Columns to the problem report Table.
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
 2.  Select **Solutions** and click to open the **Company 311** solution.
 
-3.  Locate and click to open the **Problem Report** entity.
+3.  Locate and click to open the **Problem Report** Table.
 
-4.  Make sure you have the **Fields** tab selected and click **+ Add field**.
+4.  Make sure you have the **Columns** tab selected and click **+ Add Column**.
 
 5.  Enter **Estimated Cost** for **Display name**, select **Currency** for **Data type**, and click **Done**.
 
-6.  Click the **Save Entity** located on bottom right of the screen.
+6.  Click the **Save Table** located on bottom right of the screen.
 
 7.  Select the **Forms** tab.
 
 8.  Click to open the **Main** form.
 
-9.  Add **Estimated Cost** field to the form and place it below the **Status Reason** field.
+9.  Add **Estimated Cost** Column to the form and place it below the **Status Reason** Column.
 
-10. Add the **Assign to** field and place it below the **Estimated Cost** field.
+10. Add the **Assign to** Column and place it below the **Estimated Cost** Column.
 
 11. The **Resolution details** section of the form should now look like the image below. Click **Save**.
 
-![Form after adding fields - screenshot](05/media/image12.png)
+![Form after adding Columns - screenshot](05/media/image12.png)
 
 12. Click on the **Back** button located on the top left of the screen.
 
@@ -228,11 +228,11 @@ In this task, you will create the escalation flow.
 
 3.  Click **+ New** and select **Flow**.
 
-4.  Search for **when a record is created** and select **When a record is created, updated, or deleted Common Data Service (Current environment)**.
+4.  Search for **when a Row is created** and select **When a Row is created, updated, or deleted Microsoft Dataverse (Current environment)**.
 
-5.  Select **Create or Update** for **Trigger condition**, select **Problem Reports** for **Entity name**, select **Organization** for **Scope**, and click **Show advanced options**.
+5.  Select **Create or Update** for **Trigger condition**, select **Problem Reports** for **Table name**, select **Organization** for **Scope**, and click **Show advanced options**.
 
-6.  Enter **lh\_estimatedcost** for Filtering attribute and click **Hide advanced options**.
+6.  Enter **lh\_estimatedcost** for Filtering Column and click **Hide advanced options**.
 
 7.  Click on the **… Menu** button of the trigger step and select **Rename**.
 
@@ -242,7 +242,7 @@ In this task, you will create the escalation flow.
 
 10. Select **Condition** control.
 
-11. Click to select the first **Choose a value** field.
+11. Click to select the first **Choose a value** Column.
 
 12. Go to the Dynamic content pane, search for estimated and select Estimated Cost
 
@@ -254,11 +254,11 @@ In this task, you will create the escalation flow.
 
 15. Go to the **If yes** branch and click **Add an action**.
 
-16. Search for **get a record** and select **Get a record Common Data Service (Current environment)**.
+16. Search for **get a Row** and select **Get a Row Microsoft Dataverse (Current environment)**.
 
-17. Select **Users** for **Entity name**.
+17. Select **Users** for **Table name**.
 
-18. Click to select the **Item ID** field and select **Assign to (Value)** form the **Dynamic content** pane.
+18. Click to select the **Item ID** Column and select **Assign to (Value)** form the **Dynamic content** pane.
 
 19. Click **Show advanced options**.
 
@@ -266,7 +266,7 @@ In this task, you will create the escalation flow.
 
 21. Click **Hide advanced option**.
 
-22. Rename the **Get a record** step **Get user**.
+22. Rename the **Get a Row** step **Get user**.
 
 23. Click **Add and action**.
 
@@ -276,11 +276,11 @@ In this task, you will create the escalation flow.
 
 26. Enter **Cost approval required** for **Title**.
 
-27. Click to select the **Assigned to** field.
+27. Click to select the **Assigned to** Column.
 
 28. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
 
-29. Paste the markdown text below in the **Details** field.
+29. Paste the markdown text below in the **Details** Column.
 
 > \#\# URGENT Approval Required
 >
@@ -296,7 +296,7 @@ In this task, you will create the escalation flow.
 
 32. Select **Condition** control.
 
-33. Click to select the first **Choose a value** field.
+33. Click to select the first **Choose a value** Column.
 
 34. Go to the **Dynamic content** pane, search for **outcome,** and select **Outcome**.
 
@@ -304,17 +304,17 @@ In this task, you will create the escalation flow.
 
 36. Go to the **If yes** branch and click **Add an action**.
 
-37. Search for **update a record** and select **Update a record** **Common Data Service (Current environment)**.
+37. Search for **update a Row** and select **Update a Row** **Microsoft Dataverse (Current environment)**.
 
-38. Select **Problem Reports** for **Entity name**.
+38. Select **Problem Reports** for **Table name**.
 
-39. Click to select the **Item ID** field.
+39. Click to select the **Item ID** Column.
 
 40. Go to the **Dynamic content** pane, search for **problem report,** and select **Problem Report**.
 
 41. Click **Show advanced options**.
 
-42. Click to select the **Resolution** field, go to the **Dynamic content** pane, and select **Response summary**.
+42. Click to select the **Resolution** Column, go to the **Dynamic content** pane, and select **Response summary**.
 
 43. Select **Won’t fix** for **Status Reason**.
 
@@ -338,7 +338,7 @@ In this task, you will test the escalation flow
 
 2.  Select **Apps** and click to open the **Company 311 Admin** application.
 
-3.  Click to open on of the **Problem Report** records.
+3.  Click to open on of the **Problem Report** Rows.
 
 4.  Scroll down, enter 2500 for **Estimated Cost**, assign it to yourself (for test purposes), and click **Save**.
 
@@ -356,11 +356,11 @@ In this task, you will test the escalation flow
 
 9.  Go back to the **Company 311 Admin** application.
 
-10. Change the view to **My Reports** and click to open the same record you change the estimated cost.
+10. Change the view to **My Reports** and click to open the same Row you change the estimated cost.
 
 11. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should match the comment you provided.
 
-![Updated record - screenshot](05/media/image18.png)
+![Updated Row - screenshot](05/media/image18.png)
 
 , if you have not done so previously.
 
@@ -409,9 +409,9 @@ In this task you will replace the approval sent by email with the adaptive card.
 4. Search for **approval** and select **Create an approval**.
 5. Select **Approve/Reject - Everyone must approve** for **Approval type**.
 6. Enter **Cost approval required** for **Title**.
-7. Click to select the **Assigned to** field.
+7. Click to select the **Assigned to** Column.
 8. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
-9. Paste the markdown text below in the **Details** field.
+9. Paste the markdown text below in the **Details** Column.
 
 > \*\*{title}\*\*
 >
@@ -423,9 +423,9 @@ In this task you will replace the approval sent by email with the adaptive card.
 >
 > This is a \_very\_ expensive item with the estimated cost of
 
-10. Select **{title}** placeholder, go to the **Dynamic content** pane, locate and select **Title** field from **When a problem report is created or updated** step.
+10. Select **{title}** placeholder, go to the **Dynamic content** pane, locate and select **Title** Column from **When a problem report is created or updated** step.
 
-11. Select **{details}** placeholder, go to the **Dynamic content** pane, locate and select **Details** field from **When a problem report is created or updated** step.
+11. Select **{details}** placeholder, go to the **Dynamic content** pane, locate and select **Details** Column from **When a problem report is created or updated** step.
 
 12. Place your cursor after **cost of** , go to the **Dynamic content** pane, select the **Expression** tab, paste the expression below, and click OK.
 
@@ -439,11 +439,11 @@ In this task you will replace the approval sent by email with the adaptive card.
 
 15. Search for **teams** and select **Post your own adaptive card as the Flow bot to a user** action.
 
-16. Click to select the **Recipient** field.
+16. Click to select the **Recipient** Column.
 
 17. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
 
-18. Click to select **Message** field.
+18. Click to select **Message** Column.
 
 19. Go to the **Dynamic content** pane and select **Adaptive card** from the **Create an approval** step.
 
@@ -451,7 +451,7 @@ In this task you will replace the approval sent by email with the adaptive card.
 
 21. Search for **approval** and select **Wait for an approval** action.
 
-22. Select **Approval ID** field.
+22. Select **Approval ID** Column.
 
 23. Go to the **Dynamic content** pane and select **Approval ID** from the **Create an approval** step.
 
@@ -469,7 +469,7 @@ In this task you will replace the approval sent by email with the adaptive card.
 
 28. Click **Show advanced options**.
 
-29. Click to select the **Resolution** field, go to the **Dynamic content** pane, and select **Response summary** from **Create an approval** step.
+29. Click to select the **Resolution** Column, go to the **Dynamic content** pane, and select **Response summary** from **Create an approval** step.
 
 #### Task 3: Test flow
 
@@ -479,7 +479,7 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 2.  Select **Apps** and click to open the **Company 311 Admin** application.
 
-3.  Click to open one of the **Problem Report** records.
+3.  Click to open one of the **Problem Report** Rows.
 
 4.  Scroll down, enter any amount greater than **1000** for **Estimated Cost**, assign it to yourself (for test purposes), and click **Save**.
 
@@ -499,15 +499,15 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 10. Go back to the **Company 311 Admin** application.
 
-11. Change the view to **My Reports** and click to open the same record you change the estimated cost.
+11. Change the view to **My Reports** and click to open the same Row you change the estimated cost.
 
 12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should match the comment you provided.
 
-![Updated record - screenshot](05/media/problemreportadaptivecard.png)
+![Updated Row - screenshot](05/media/problemreportadaptivecard.png)
 
 ## **Discussion**
 
-  - Would creating a bool field for Approved/Rejected be better?
+  - Would creating a bool Column for Approved/Rejected be better?
   - What are the pros and cons of using Microsoft Teams over regular email?
 
 ## **Bonus exercises**
